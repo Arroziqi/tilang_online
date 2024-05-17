@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/themeData.dart';
-import 'package:flutter_app/ui/pages/get_started/start_page1.dart';
+import 'package:flutter_app/ui/pages/onboarding/onboarding_page.dart';
 import 'package:flutter_app/ui/pages/splash_page.dart';
+
+import 'ui/pages/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +27,8 @@ class MyApp extends StatelessWidget {
       // routes
       routes: {
         '/': (context) => SplashPage(),
-        '/get-started': (context) => StartPage(),
+        '/onboarding': (context) => onboardingPage(),
+        '/home': (context) => MainPage(),
       },
     );
   }

@@ -6,13 +6,13 @@ double defaultMargin = 21.0;
 double defaultRadius = 12.0;
 
 // colors
-Color kPrimaryColor = const Color(0xff2C449C);
-Color kSecondaryColor = const Color(0xff5F7DEB);
-Color kThirdColor = const Color(0xffD24F4F);
-Color kFourthColor = const Color(0xffFFB1B1);
-Color kBackgroundColor = const Color(0xffFBBC24);
-Color kGreenColor = const Color(0xff319B3C);
-Color kGreyColor = const Color(0xff8D9091);
+const Color kPrimaryColor = Color(0xff2C449C);
+const Color kSecondaryColor = Color(0xff5F7DEB);
+const Color kThirdColor = Color(0xffD24F4F);
+const Color kFourthColor = Color(0xffFFB1B1);
+const Color kBackgroundColor = Color(0xffFBBC24);
+const Color kGreenColor = Color(0xff319B3C);
+const Color kGreyColor = Color(0xff8D9091);
 
 // text style
 TextStyle blackTextStyle = GoogleFonts.kanit(

@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:gap/gap.dart';
@@ -12,14 +10,6 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  @override
-  void initState(){
-    Timer(const Duration(seconds: 5), (){
-      Navigator.pushNamed(context, '/get-started');
-    });
-    super.initState();
-  }
-
   // untuk membuat background
   Widget backgroundProvider() {
     return Container(
@@ -61,7 +51,9 @@ class _SplashPageState extends State<SplashPage> {
           ),
           const Gap(39),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/onboarding');
+            },
             style: TextButton.styleFrom(
               backgroundColor: Colors.white,
               shape: RoundedRectangleBorder(
@@ -86,13 +78,14 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Stack(
-        children: [
-          backgroundProvider(),
-          buildContent(),
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+            backgroundProvider(),
+            buildContent(),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
