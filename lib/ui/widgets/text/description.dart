@@ -13,8 +13,8 @@ class TextDescription extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontWeight: regular,
-        fontSize: 15,
+        fontWeight: light,
+        fontSize: 12,
         color: color,
       ),
     );

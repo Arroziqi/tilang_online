@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/onboarding/components/button_get_started.dart';
 import 'package:flutter_app/ui/pages/onboarding/components/custom_bottom_navigation.dart';

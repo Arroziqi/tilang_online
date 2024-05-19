@@ -11,7 +11,7 @@ class ButtonTextWhite extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(backgroundColor: Colors.transparent),
-      onPressed: ()=> pageController.animateToPage(0, duration: Duration(milliseconds: 600), curve: Curves.easeIn),
+      onPressed: ()=> pageController.animateToPage(0, duration: const Duration(milliseconds: 600), curve: Curves.easeIn),
       child: Text(
         'Kembali',
         style: whiteTextStyle.copyWith(fontSize: 16, fontWeight: bold),

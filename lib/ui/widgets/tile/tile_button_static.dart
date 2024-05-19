@@ -17,7 +17,7 @@ class TileButton extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Image.asset('assets/img/img_tile.png',),
-          Container( width: 360, height: 144,alignment: Alignment.bottomRight, padding: EdgeInsets.only(bottom: 25, right: 40), child: ButtonRing(text: text, onPressed: () {}),),
+          Container( width: 360, height: 144,alignment: Alignment.bottomRight, padding: const EdgeInsets.only(bottom: 25, right: 40), child: ButtonRing(text: text, onPressed: () {}),),
         ],
       ),
     );

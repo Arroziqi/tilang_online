@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/shared/themeData.dart';
+import 'package:flutter_app/shared/theme_data.dart';
 import 'package:flutter_app/ui/pages/onboarding/onboarding_page.dart';
 import 'package:flutter_app/ui/pages/splash_page.dart';
 
@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 
       // routes
       routes: {
-        '/': (context) => SplashPage(),
-        '/onboarding': (context) => onboardingPage(),
-        '/home': (context) => MainPage(),
+        '/': (context) => const SplashPage(),
+        '/onboarding': (context) => const onboardingPage(),
+        '/home': (context) => const MainPage(),
       },
     );
   }

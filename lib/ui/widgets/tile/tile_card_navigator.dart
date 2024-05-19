@@ -37,22 +37,30 @@ class TileCardNavigator extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(borderRadius),
           color: backgroundColor,
-          boxShadow: const [BoxShadow(
-            color: Colors.black26,
-            blurRadius: 4,
-            offset: Offset(0, 4),
-          ),],
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black26,
+              blurRadius: 4,
+              offset: Offset(0, 4),
+            ),
+          ],
         ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(width: 62, height: 62, child: Image.asset(imageUrl),),
+            Image.asset(imageUrl, width: 47, height: 47,),
             const Gap(12),
-            Column(
-              children: [
-                Headline3(text: title),
-                const Gap(3),
-                TextDescription(text: description,)
-              ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Headline3(text: title),
+                  const Gap(3),
+                  TextDescription(
+                    text: description,
+                  )
+                ],
+              ),
             ),
           ],
         ),

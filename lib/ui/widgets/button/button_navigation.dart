@@ -9,7 +9,7 @@ class ButtonNavigation extends StatelessWidget {
   // final Function() onPressed;
   final PageController pageController;
 
-  ButtonNavigation({
+  const ButtonNavigation({
     super.key,
     required this.text,
     required this.icon,

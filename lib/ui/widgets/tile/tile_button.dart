@@ -16,8 +16,8 @@ class TileButton extends StatelessWidget {
           'assets/img/img_tile.png',
         ),
         Positioned(
-          bottom: 25,
-          right: 40,
+          bottom: 17,
+          right: 25,
           child: ButtonRing(text: text, onPressed: () {}),
         ),
       ],
