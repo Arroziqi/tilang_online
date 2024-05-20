@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/home/custom_appbar.dart';
 import 'package:flutter_app/ui/pages/home/feature_lists.dart';
+import 'package:flutter_app/ui/widgets/bar/appBar/custom_home_appbar.dart';
 import 'package:flutter_app/ui/widgets/text/description.dart';
 import 'package:flutter_app/ui/widgets/text/headline1.dart';
 import 'package:flutter_app/ui/widgets/tile/tile_button.dart';
@@ -10,7 +11,7 @@ import 'package:gap/gap.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  Widget buildTitleSection(){
+  Widget buildTitleSection() {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -18,14 +19,14 @@ class HomePage extends StatelessWidget {
         Gap(6),
         TextDescription(
           text:
-          "Pengecekan denda Motion diperuntukkan bagi mereka yang berkepentingan dalam jual beli kendaraan & Persewaan Kendaraan",
+              "Pengecekan denda Motion diperuntukkan bagi mereka yang berkepentingan dalam jual beli kendaraan & Persewaan Kendaraan",
           color: Colors.black,
         ),
       ],
     );
   }
 
-  Widget buildImageSection(){
+  Widget buildImageSection() {
     return const TileButton(text: 'Cek Sekarang');
   }
 
@@ -33,7 +34,7 @@ class HomePage extends StatelessWidget {
     return featureLists();
   }
 
-  Widget buildContent(){
+  Widget buildContent() {
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: 15,
@@ -53,7 +54,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(),
+      appBar: customHomeAppBar(title: 'Kelompok Gajah Mada'),
       body: buildContent(),
     );
   }

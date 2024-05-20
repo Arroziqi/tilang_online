@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/ui/pages/edukasi/custom_edukasi_app_bar.dart';
 import 'package:flutter_app/ui/pages/edukasi/education_lists.dart';
+import 'package:flutter_app/ui/widgets/bar/appBar/custom_appbar.dart';
 
 import '../../../shared/theme.dart';
 
 class EdukasiPage extends StatelessWidget {
   const EdukasiPage({super.key});
 
-  Widget buildContent(){
+  PreferredSizeWidget buildAppBar() {
+    return customAppBar(
+      title: "Edukasi",
+    );
+  }
+
+  Widget buildContent() {
     return Padding(
       padding: EdgeInsets.symmetric(
         vertical: 15,
@@ -24,7 +30,7 @@ class EdukasiPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customEdukasiAppBar(),
+      appBar: buildAppBar(),
       body: buildContent(),
     );
   }

@@ -75,12 +75,12 @@ class AppTheme {
       // text button
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(kPrimaryColor),
-          textStyle: MaterialStateProperty.all(whiteTextStyle.copyWith(
+          backgroundColor: WidgetStateProperty.all(kPrimaryColor),
+          textStyle: WidgetStateProperty.all(whiteTextStyle.copyWith(
             fontSize: 20,
             fontWeight: bold,
           ),),
-          shape: MaterialStateProperty.all(RoundedRectangleBorder(
+          shape: WidgetStateProperty.all(RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(defaultRadius),),
           ),),
         ),

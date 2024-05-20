@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 
-PreferredSizeWidget customEdukasiAppBar() {
+PreferredSizeWidget customAppBar({required title, tabBar = false}) {
   return AppBar(
     leadingWidth: 89,
     toolbarHeight: 101,
@@ -14,7 +14,7 @@ PreferredSizeWidget customEdukasiAppBar() {
       ),
     ),
     title: Text(
-      'Edukasi',
+      title,
       style: whiteTextStyle.copyWith(
         fontWeight: semiBold,
         fontSize: 24,
@@ -27,5 +27,25 @@ PreferredSizeWidget customEdukasiAppBar() {
         ],
       ),
     ),
+    bottom: tabBar
+        ? TabBar(
+            labelStyle: whiteTextStyle.copyWith(
+              fontWeight: semiBold,
+              fontSize: 18,
+            ),
+            indicatorColor: Colors.black,
+            unselectedLabelColor: Colors.white,
+            indicatorSize: TabBarIndicatorSize.tab,
+            indicatorWeight: 5,
+            tabs: const [
+              Tab(
+                text: 'Sedang Proses',
+              ),
+              Tab(
+                text: 'Selesei',
+              ),
+            ],
+          )
+        : null,
   );
 }
