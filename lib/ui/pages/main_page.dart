@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/edukasi/edukasi_page.dart';
 import 'package:flutter_app/ui/pages/home/home_page.dart';
+import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
 import 'package:flutter_app/ui/pages/riwayat/riwayat_page.dart';
 import 'package:flutter_app/ui/widgets/bar/bottomNavigationBar/custom_bottom_navigation_bar.dart';
 
@@ -8,7 +9,7 @@ class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   Widget buildContent() {
-    return const HomePage();
+    return const NotifikasiPage();
   }
 
   Widget buildBottomNavigationBar() {

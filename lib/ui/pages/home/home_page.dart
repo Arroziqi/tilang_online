@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
-import 'package:flutter_app/ui/pages/home/custom_appbar.dart';
 import 'package:flutter_app/ui/pages/home/feature_lists.dart';
 import 'package:flutter_app/ui/widgets/bar/appBar/custom_home_appbar.dart';
 import 'package:flutter_app/ui/widgets/text/description.dart';
@@ -10,6 +9,10 @@ import 'package:gap/gap.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
+  PreferredSizeWidget buildAppBar() {
+    return customHomeAppBar(title: 'Kelompok Gajah Mada');
+  }
 
   Widget buildTitleSection() {
     return const Column(
@@ -54,7 +57,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customHomeAppBar(title: 'Kelompok Gajah Mada'),
+      appBar: buildAppBar(),
       body: buildContent(),
     );
   }
