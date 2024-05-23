@@ -19,9 +19,8 @@ class DataKosong extends StatelessWidget {
           Image.asset(
             imageUrl,
             width: 185,
-            height: 185,
           ),
-          const Gap(32),
+          const Gap(25),
           Text(
             text,
             style: blackTextStyle.copyWith(

@@ -18,11 +18,7 @@ class KendaraanPage extends StatelessWidget {
         vertical: 20,
         horizontal: defaultMargin,
       ),
-      child: ListView(
-        children: const [
-          KendaraanKosong(),
-        ],
-      ),
+      child: const KendaraanKosong(),
     );
   }
 
