@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
+import 'package:flutter_app/ui/pages/masukan/masukan_page.dart';
+import 'package:flutter_app/ui/pages/media_sosial/media_sosial_page.dart';
+import 'package:flutter_app/ui/pages/pelanggaran/pelanggaran_page.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_app/cubit/page_cubit.dart';
@@ -39,6 +43,10 @@ class MyApp extends StatelessWidget {
           '/': (context) => const SplashPage(),
           '/onboarding': (context) => const onboardingPage(),
           '/home': (context) => const MainPage(),
+          '/pelanggaran': (context) => const PelanggaranPage(),
+          '/masukan': (context) => const MasukanPage(),
+          '/kendaraan': (context) => const KendaraanPage(),
+          '/medsos': (context) => const MediaSosialPage(),
         },
       ),
     );

@@ -14,6 +14,7 @@ PreferredSizeWidget customBackNavigationAppBar({
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
+            onTap: () {},
             child: const Icon(
               Icons.arrow_back_rounded,
               size: 39,

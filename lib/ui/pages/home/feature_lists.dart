@@ -6,14 +6,31 @@ import '../../widgets/tile/tile_card_navigator.dart';
 
 final controller = FeatureTileItems();
 
-Widget featureLists(){
+Widget featureLists() {
   return ListTiles(
     itemBuilder: (context, index) => Container(
       margin: const EdgeInsets.only(
         top: 20,
       ),
       child: TileCardNavigator(
-        onPressed: () {},
+        onPressed: () {
+          switch (index) {
+            case 0:
+              Navigator.pushNamed(context, '/pelanggaran');
+              break;
+            case 1:
+              Navigator.pushNamed(context, '/masukan');
+              break;
+            case 2:
+              Navigator.pushNamed(context, '/kendaraan');
+              break;
+            case 3:
+              Navigator.pushNamed(context, '/medsos');
+              break;
+            default:
+              Navigator.pushNamed(context, '/kendaraan');
+          }
+        },
         padding: const EdgeInsets.symmetric(
           horizontal: 15,
           vertical: 10,
