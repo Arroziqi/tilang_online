@@ -1,30 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/cubit/page_cubit.dart';
 import 'package:flutter_app/ui/widgets/bar/bottomNavigationBar/custom_bottom_navigation_bar_item.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-Widget customBottomNavigationBar() {
-  return const Row(
-    mainAxisAlignment: MainAxisAlignment.spaceAround,
-    children: [
-      CustomBottomNavigationBarItem(
-        imageUrl: 'assets/img/icons/beranda.png',
-        text: 'Beranda',
-        index: 0,
-      ),
-      CustomBottomNavigationBarItem(
-        imageUrl: 'assets/img/icons/riwayat.png',
-        text: 'Riwayat',
-        index: 1,
-      ),
-      CustomBottomNavigationBarItem(
-        imageUrl: 'assets/img/icons/edukasi.png',
-        text: 'Edukasi',
-        index: 2,
-      ),
-      CustomBottomNavigationBarItem(
-        imageUrl: 'assets/img/icons/profil.png',
-        text: 'Profil',
-        index: 2,
-      ),
-    ],
-  );
+class CustomBottomNavigationBar extends StatelessWidget {
+  const CustomBottomNavigationBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        CustomBottomNavigationBarItem(
+          imageUrl: 'assets/img/icons/beranda.png',
+          text: 'Beranda',
+          index: 0,
+        ),
+        CustomBottomNavigationBarItem(
+          imageUrl: 'assets/img/icons/riwayat.png',
+          text: 'Riwayat',
+          index: 1,
+        ),
+        CustomBottomNavigationBarItem(
+          imageUrl: 'assets/img/icons/edukasi.png',
+          text: 'Edukasi',
+          index: 2,
+        ),
+        CustomBottomNavigationBarItem(
+          imageUrl: 'assets/img/icons/profil.png',
+          text: 'Profil',
+          index: 3,
+        ),
+      ],
+    );
+  }
 }

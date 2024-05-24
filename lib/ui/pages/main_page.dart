@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/cubit/page_cubit.dart';
 import 'package:flutter_app/ui/pages/edukasi/edukasi_page.dart';
 import 'package:flutter_app/ui/pages/home/home_page.dart';
-import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
-import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
 import 'package:flutter_app/ui/pages/profil/profil_page.dart';
 import 'package:flutter_app/ui/pages/riwayat/riwayat_page.dart';
 import 'package:flutter_app/ui/widgets/bar/bottomNavigationBar/custom_bottom_navigation_bar.dart';
@@ -40,7 +38,7 @@ class MainPage extends StatelessWidget {
           ),
         ],
       ),
-      child: customBottomNavigationBar(),
+      child: const CustomBottomNavigationBar(),
     );
   }
 
