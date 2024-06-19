@@ -4,7 +4,8 @@ import 'package:flutter_app/shared/theme.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:gap/gap.dart';
 
-PreferredSizeWidget customHomeAppBar({required title}) {
+PreferredSizeWidget customHomeAppBar(
+    {required BuildContext context, required title}) {
   return AppBar(
     leading: Row(
       children: [
@@ -33,27 +34,32 @@ PreferredSizeWidget customHomeAppBar({required title}) {
       ],
     ),
     actions: [
-      badges.Badge(
-        badgeContent: Text(
-          '3',
-          style: whiteTextStyle.copyWith(
-            fontWeight: bold,
-            fontSize: 18,
+      GestureDetector(
+        onTap: () {
+          Navigator.pushNamed(context, '/notifikasi');
+        },
+        child: badges.Badge(
+          badgeContent: Text(
+            '3',
+            style: whiteTextStyle.copyWith(
+              fontWeight: bold,
+              fontSize: 18,
+            ),
           ),
-        ),
-        badgeAnimation: const badges.BadgeAnimation.slide(),
-        badgeStyle: const badges.BadgeStyle(
-          badgeColor: kBackgroundColor,
-          borderSide: BorderSide(
-            width: 4,
+          badgeAnimation: const badges.BadgeAnimation.slide(),
+          badgeStyle: const badges.BadgeStyle(
+            badgeColor: kBackgroundColor,
+            borderSide: BorderSide(
+              width: 4,
+              color: Colors.white,
+            ),
+            padding: EdgeInsets.all(10),
+          ),
+          child: const Icon(
+            Icons.notifications_none,
+            size: 46,
             color: Colors.white,
           ),
-          padding: EdgeInsets.all(10),
-        ),
-        child: const Icon(
-          Icons.notifications_none,
-          size: 46,
-          color: Colors.white,
         ),
       ),
       const Gap(24),

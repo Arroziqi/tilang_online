@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/home/feature_tile_items.dart';
+import '../../../models/pages/home/feature_tile_items.dart';
 import '../../widgets/list/list_tiles.dart';
 import '../../widgets/tile/tile_card_navigator.dart';
 

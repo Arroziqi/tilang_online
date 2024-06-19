@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 
 PreferredSizeWidget customBackNavigationAppBar({
+  required BuildContext context,
   required title,
   tabBar = false,
 }) {
@@ -14,17 +15,24 @@ PreferredSizeWidget customBackNavigationAppBar({
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+            },
             child: const Icon(
               Icons.arrow_back_rounded,
               size: 39,
               color: Colors.white,
             ),
           ),
-          Image.asset(
-            'assets/img/logo.png',
-            width: 70,
-            height: 68,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/home');
+            },
+            child: Image.asset(
+              'assets/img/logo.png',
+              width: 70,
+              height: 68,
+            ),
           ),
         ],
       ),

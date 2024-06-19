@@ -6,8 +6,9 @@ import 'package:flutter_app/ui/widgets/bar/appBar/custom_back_navigation_appbar.
 class KendaraanPage extends StatelessWidget {
   const KendaraanPage({super.key});
 
-  PreferredSizeWidget buildAppBar() {
+  PreferredSizeWidget buildAppBar(BuildContext context) {
     return customBackNavigationAppBar(
+      context: context,
       title: "Kendaraan Saya",
     );
   }
@@ -25,7 +26,7 @@ class KendaraanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: buildContent(),
     );
   }

@@ -10,8 +10,8 @@ import 'package:gap/gap.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  PreferredSizeWidget buildAppBar() {
-    return customHomeAppBar(title: 'Kelompok Gajah Mada');
+  PreferredSizeWidget buildAppBar(BuildContext context) {
+    return customHomeAppBar(context: context, title: 'Kelompok Gajah Mada');
   }
 
   Widget buildTitleSection() {
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: buildContent(),
     );
   }

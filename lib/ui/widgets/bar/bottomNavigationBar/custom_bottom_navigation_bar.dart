@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/cubit/page_cubit.dart';
 import 'package:flutter_app/ui/widgets/bar/bottomNavigationBar/custom_bottom_navigation_bar_item.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   const CustomBottomNavigationBar({super.key});

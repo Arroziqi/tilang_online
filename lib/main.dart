@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_page.dart';
 import 'package:flutter_app/ui/pages/media_sosial/media_sosial_page.dart';
+import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
+import 'package:flutter_app/ui/pages/notifikasi/pelanggaran/notifikasi_pelanggaran.dart';
+import 'package:flutter_app/ui/pages/notifikasi/pelanggaran/notifikasi_pelanggaran_view.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/pelanggaran_page.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -41,12 +44,15 @@ class MyApp extends StatelessWidget {
         // routes
         routes: {
           '/': (context) => const SplashPage(),
-          '/onboarding': (context) => const onboardingPage(),
+          '/onboarding': (context) => const OnboardingPage(),
           '/home': (context) => const MainPage(),
+          '/notifikasi': (context) => const NotifikasiPage(),
           '/pelanggaran': (context) => const PelanggaranPage(),
           '/masukan': (context) => const MasukanPage(),
           '/kendaraan': (context) => const KendaraanPage(),
           '/medsos': (context) => const MediaSosialPage(),
+          '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
+          '/pelanggaran/view': (context) => const NotifikasiPelanggaranView(),
         },
       ),
     );

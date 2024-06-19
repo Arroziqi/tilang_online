@@ -7,8 +7,9 @@ import '../../../shared/theme.dart';
 class NotifikasiPage extends StatelessWidget {
   const NotifikasiPage({super.key});
 
-  PreferredSizeWidget buildAppBar() {
+  PreferredSizeWidget buildAppBar(BuildContext context) {
     return customBackNavigationAppBar(
+      context: context,
       title: "Notifikasi",
     );
   }
@@ -30,7 +31,7 @@ class NotifikasiPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: buildContent(),
     );
   }

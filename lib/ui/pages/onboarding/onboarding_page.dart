@@ -5,16 +5,16 @@ import 'package:flutter_app/ui/pages/onboarding/components/custom_bottom_navigat
 import 'package:gap/gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../models/onboarding/onboarding_contents.dart';
+import '../../../models/pages/onboarding/onboarding_contents.dart';
 
-class onboardingPage extends StatefulWidget {
-  const onboardingPage({super.key});
+class OnboardingPage extends StatefulWidget {
+  const OnboardingPage({super.key});
 
   @override
-  State<onboardingPage> createState() => _onboardingPageState();
+  State<OnboardingPage> createState() => _OnboardingPageState();
 }
 
-class _onboardingPageState extends State<onboardingPage> {
+class _OnboardingPageState extends State<OnboardingPage> {
   // mengambil isi konten onboarding dari model OnBoardingContents
   final controller = OnBoardingContents();
 
@@ -131,7 +131,10 @@ class _onboardingPageState extends State<onboardingPage> {
   PreferredSizeWidget buildAppBar() {
     return AppBar(
       leading: Container(
-        padding: const EdgeInsets.only(left: 19),
+        padding: const EdgeInsets.only(
+          left: 19,
+          top: 15,
+        ),
         child: Row(
           children: [
             Image.asset(
@@ -148,6 +151,7 @@ class _onboardingPageState extends State<onboardingPage> {
         ),
       ),
       leadingWidth: 250,
+      toolbarHeight: 75,
     );
   }
 
