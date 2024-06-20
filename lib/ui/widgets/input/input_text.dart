@@ -15,7 +15,10 @@ class InputText extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      style: blackTextStyle.copyWith(fontSize: 22, fontWeight: light,),
+      style: blackTextStyle.copyWith(
+        fontSize: 22,
+        fontWeight: light,
+      ),
     );
   }
 }

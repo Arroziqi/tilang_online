@@ -2,14 +2,18 @@
 import 'package:flutter_app/models/pages/login/signup/signup_items.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/login/components/input.dart';
+import 'package:flutter_app/ui/pages/login/services/auth_service.dart';
 import 'package:gap/gap.dart';
 
+import 'package:firebase_auth/firebase_auth.dart';
+
 final controller = SignUpItems();
+final AuthService _authService = AuthService();
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
 
-  Widget buildForm() {
+  Widget buildForm(BuildContext context) {
     return ListView.separated(
       physics: BouncingScrollPhysics(),
       itemCount: controller.items.length,
@@ -17,7 +21,8 @@ class SignUp extends StatelessWidget {
         label: controller.items[index].label,
         hintText: controller.items[index].hintText,
         type: controller.items[index].type,
-        // selectItems: controller.items[index].selectItems,
+        controller:
+            TextEditingController(), // Pass a TextEditingController here
       ),
       shrinkWrap: true,
       separatorBuilder: (context, index) => const Gap(17),
@@ -26,8 +31,20 @@ class SignUp extends StatelessWidget {
 
   Widget buttonSubmit(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        Navigator.pushNamed(context, '/login');
+      onPressed: () async {
+        // Fetch the email and password from the input fields
+        String email = controller.items[0].hintText;
+        String password = controller.items[1].hintText;
+
+        // Attempt to sign up
+        User? user =
+            await _authService.signUpWithEmailAndPassword(email, password);
+        if (user != null) {
+          Navigator.pushNamed(context, '/home');
+        } else {
+          // Handle sign-up error
+          print('Sign-up failed');
+        }
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: kPrimaryColor,
@@ -66,7 +83,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               const Gap(38),
-              buildForm(),
+              buildForm(context),
               const Gap(38),
               buttonSubmit(context),
               Gap(defaultMargin),

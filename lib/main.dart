@@ -18,7 +18,11 @@ import 'package:flutter_app/ui/pages/splash_page.dart';
 
 import 'ui/pages/main_page.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 

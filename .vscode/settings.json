@@ -2,5 +2,6 @@
     "editor.defaultFormatter": "Dart-Code.flutter",
     "editor.formatOnSave": true,
     "files.autoSave": "onWindowChange",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
