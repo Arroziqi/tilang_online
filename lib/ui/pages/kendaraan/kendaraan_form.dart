@@ -62,7 +62,7 @@ class KendaraanForm extends StatelessWidget {
       body: buildContent(context),
       bottomSheet: Button(
           onPressed: () {
-            Navigator.pushNamed(context, '/kendaraan/view');
+            Navigator.pushNamed(context, '/kendaraan/lists');
           },
           text: 'Simpan'),
     );

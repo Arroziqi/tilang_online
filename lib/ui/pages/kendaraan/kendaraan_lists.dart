@@ -22,11 +22,15 @@ class KendaraanLists extends StatelessWidget {
       child: ListView.separated(
         itemCount: controller.items.length,
         itemBuilder: (context, index) => Tile(
-            imgUrl: controller.items[index].imgUrl,
-            platNomer: controller.items[index].platNomer,
-            nik: controller.items[index].nik,
-            isVerified: controller.items[index].isVerified),
-        separatorBuilder: (context, index)=>Gap(31),
+          imgUrl: controller.items[index].imgUrl,
+          platNomer: controller.items[index].platNomer,
+          nik: controller.items[index].nik,
+          isVerified: controller.items[index].isVerified,
+          onTap: () {
+            Navigator.pushNamed(context, '/kendaraan/view');
+          },
+        ),
+        separatorBuilder: (context, index) => Gap(31),
       ),
     );
   }
