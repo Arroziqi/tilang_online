@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/firebase_options.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_form.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_lists.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
@@ -19,7 +21,9 @@ import 'package:flutter_app/ui/pages/splash_page.dart';
 
 import 'ui/pages/main_page.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 

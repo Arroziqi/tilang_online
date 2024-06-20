@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52856553378",
+    "project_id": "tilang-online-d4b5d",
+    "storage_bucket": "tilang-online-d4b5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52856553378:android:7ee85199be3a78b302fcfb",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6hUndRnZwvAi4r14fCZuqOAEpCGsMpNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
