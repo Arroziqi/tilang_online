@@ -40,18 +40,13 @@ FontWeight bold = FontWeight.w700;
 FontWeight extraBold = FontWeight.w800;
 FontWeight black = FontWeight.w900;
 
-
 //button style
 final ButtonStyle primaryButtonStyle = ElevatedButton.styleFrom(
   backgroundColor: kPrimaryColor,
-  padding: const EdgeInsets.symmetric(vertical: 20),
-  textStyle: whiteTextStyle.copyWith(
-    fontSize: 20,
-    fontWeight: semiBold,
+  padding: const EdgeInsets.symmetric(
+    vertical: 10,
   ),
-  shape: const RoundedRectangleBorder(
-    borderRadius: BorderRadius.all(
-      Radius.circular(9),
-    ),
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(9),
   ),
 );

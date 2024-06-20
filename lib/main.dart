@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ui/pages/kendaraan/kendaraan_form.dart';
+import 'package:flutter_app/ui/pages/kendaraan/kendaraan_lists.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_page.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_success.dart';
@@ -52,6 +54,8 @@ class MyApp extends StatelessWidget {
           '/masukan': (context) => const MasukanPage(),
           '/masukan/success': (context) => const MasukanSuccess(),
           '/kendaraan': (context) => const KendaraanPage(),
+          '/kendaraan/form': (context) => const KendaraanForm(),
+          '/kendaraan/view': (context) => const KendaraanLists(),
           '/medsos': (context) => const MediaSosialPage(),
           '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
           '/pelanggaran/view': (context) => const NotifikasiPelanggaranView(),

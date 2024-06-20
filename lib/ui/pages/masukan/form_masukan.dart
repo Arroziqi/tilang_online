@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/models/pages/masukan/input_items.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/masukan/components/input.dart';
-import 'package:flutter_app/ui/widgets/button/button_primary.dart';
 import 'package:gap/gap.dart';
 
 final controller = InputItems();

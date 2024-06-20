@@ -6,15 +6,21 @@ Widget buttonPrimary({
   required String text,
   WidgetStateProperty<Size?>? fixedSize,
 }) {
-  return ElevatedButton(
-    onPressed: onPressed,
-    style: primaryButtonStyle.copyWith(fixedSize: fixedSize),
-    child: Text(
-      text,
-      style: whiteTextStyle.copyWith(
-        fontSize: 20,
-        fontWeight: semiBold,
+  return Row(
+    children: [
+      Expanded(
+        child: ElevatedButton(
+          onPressed: onPressed,
+          style: primaryButtonStyle,
+          child: Text(
+            text,
+            style: whiteTextStyle.copyWith(
+              fontSize: 20,
+              fontWeight: semiBold,
+            ),
+          ),
+        ),
       ),
-    ),
+    ],
   );
 }
