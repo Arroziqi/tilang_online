@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_app/models/pages/masukan/input_items.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/masukan/components/input.dart';
+import 'package:flutter_app/ui/widgets/button/button_primary.dart';
 import 'package:gap/gap.dart';
 
 final controller = InputItems();
@@ -17,10 +18,32 @@ class FormMasukan extends StatelessWidget {
         label: controller.items[index].label,
         hintText: controller.items[index].hintText,
         type: controller.items[index].type,
-        selectItems: controller.items[index].selectItems,
+        // selectItems: controller.items[index].selectItems,
       ),
       shrinkWrap: true,
       separatorBuilder: (context, index) => const Gap(17),
+    );
+  }
+
+  Widget buttonSubmit(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.pushNamed(context, '/masukan/success');
+      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: kPrimaryColor,
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 80),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(9),
+        ),
+      ),
+      child: Text(
+        'Kirim',
+        style: whiteTextStyle.copyWith(
+          fontSize: 20,
+          fontWeight: semiBold,
+        ),
+      ),
     );
   }
 
@@ -45,6 +68,8 @@ class FormMasukan extends StatelessWidget {
               ),
               const Gap(38),
               buildForm(),
+              const Gap(38),
+              buttonSubmit(context),
               Gap(defaultMargin),
             ],
           ),

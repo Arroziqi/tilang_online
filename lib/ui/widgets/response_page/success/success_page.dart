@@ -16,15 +16,15 @@ class SuccessPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/img/icon/done-2.png',
+            'assets/img/icons/done-2.png',
             width: 89,
           ),
           const Gap(25),
           Text(
             text,
             style: blackTextStyle.copyWith(
-              fontWeight: regular,
-              fontSize: 18,
+              fontWeight: medium,
+              fontSize: 25,
             ),
             textAlign: TextAlign.center,
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_page.dart';
+import 'package:flutter_app/ui/pages/masukan/masukan_success.dart';
 import 'package:flutter_app/ui/pages/media_sosial/media_sosial_page.dart';
 import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
 import 'package:flutter_app/ui/pages/notifikasi/pelanggaran/notifikasi_pelanggaran.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
           '/notifikasi': (context) => const NotifikasiPage(),
           '/pelanggaran': (context) => const PelanggaranPage(),
           '/masukan': (context) => const MasukanPage(),
+          '/masukan/success': (context) => const MasukanSuccess(),
           '/kendaraan': (context) => const KendaraanPage(),
           '/medsos': (context) => const MediaSosialPage(),
           '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
