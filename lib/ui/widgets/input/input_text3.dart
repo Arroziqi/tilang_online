@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 
-class InputText extends StatelessWidget {
-  const InputText({
+class InputText3 extends StatelessWidget {
+  const InputText3({
     Key? key,
     required this.hintText,
     required this.controller,

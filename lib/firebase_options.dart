@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'authenticationapp-a7a60.appspot.com',
     iosBundleId: 'com.example.flutterApp',
   );
+
 }

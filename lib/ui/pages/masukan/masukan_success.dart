@@ -34,9 +34,17 @@ class MasukanSuccess extends StatelessWidget {
                     Navigator.pushNamed(context, '/home');
                   },
                   style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(vertical: 10,),
+                    padding: EdgeInsets.symmetric(
+                      vertical: 10,
+                    ),
                   ),
-                  child: Text('Kembali ke halaman Utama', style: whiteTextStyle.copyWith(fontWeight: semiBold, fontSize: 20,),),
+                  child: Text(
+                    'Kembali ke halaman Utama',
+                    style: whiteTextStyle.copyWith(
+                      fontWeight: semiBold,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
               ),
             ),
