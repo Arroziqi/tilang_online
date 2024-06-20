@@ -3,8 +3,9 @@ import 'package:flutter_app/shared/theme.dart';
 
 PreferredSizeWidget customBackNavigationAppBar({
   required BuildContext context,
-  required title,
-  tabBar = false,
+  required String title,
+  bool tabBar = false,
+  List<String> tabs = const ['Sedang Proses', 'Selesei'],
 }) {
   return AppBar(
     leadingWidth: 130,
@@ -61,14 +62,7 @@ PreferredSizeWidget customBackNavigationAppBar({
             unselectedLabelColor: Colors.white,
             indicatorSize: TabBarIndicatorSize.tab,
             indicatorWeight: 5,
-            tabs: const [
-              Tab(
-                text: 'Sedang Proses',
-              ),
-              Tab(
-                text: 'Selesei',
-              ),
-            ],
+            tabs: tabs.map((tab) => Tab(text: tab)).toList(),
           )
         : null,
   );

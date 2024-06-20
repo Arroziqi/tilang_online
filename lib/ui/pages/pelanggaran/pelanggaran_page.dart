@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/data_pelanggaran.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/data_pelanggaran_kosong.dart';
-import 'package:flutter_app/ui/widgets/bar/appBar/custom_appbar.dart';
 import 'package:flutter_app/ui/widgets/bar/appBar/custom_back_navigation_appbar.dart';
 
 class PelanggaranPage extends StatelessWidget {

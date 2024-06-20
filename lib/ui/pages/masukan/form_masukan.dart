@@ -1,0 +1,55 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/models/pages/masukan/input_items.dart';
+import 'package:flutter_app/shared/theme.dart';
+import 'package:flutter_app/ui/pages/masukan/components/input.dart';
+import 'package:gap/gap.dart';
+
+final controller = InputItems();
+
+class FormMasukan extends StatelessWidget {
+  const FormMasukan({super.key});
+
+  Widget buildForm() {
+    return ListView.separated(
+      physics: BouncingScrollPhysics(),
+      itemCount: controller.items.length,
+      itemBuilder: (context, index) => Input(
+        label: controller.items[index].label,
+        hintText: controller.items[index].hintText,
+        type: controller.items[index].type,
+        selectItems: controller.items[index].selectItems,
+      ),
+      shrinkWrap: true,
+      separatorBuilder: (context, index) => const Gap(17),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: defaultMargin,
+        right: defaultMargin,
+        top: defaultMargin,
+      ),
+      child: ListView(
+        children: [
+          Column(
+            children: [
+              Text(
+                'Tuliskan Masukan Anda di sini',
+                style: blackTextStyle.copyWith(
+                  fontSize: 24,
+                  fontWeight: semiBold,
+                ),
+              ),
+              const Gap(38),
+              buildForm(),
+              Gap(defaultMargin),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
