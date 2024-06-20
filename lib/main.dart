@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
+import 'package:flutter_app/ui/pages/login/login.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_page.dart';
 import 'package:flutter_app/ui/pages/masukan/masukan_success.dart';
 import 'package:flutter_app/ui/pages/media_sosial/media_sosial_page.dart';
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
           '/medsos': (context) => const MediaSosialPage(),
           '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
           '/pelanggaran/view': (context) => const NotifikasiPelanggaranView(),
+          '/login': (context) => const LoginPage(),
         },
       ),
     );

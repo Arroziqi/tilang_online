@@ -11,6 +11,6 @@ class NotifikasiPelanggaranViewTileItems {
       title: 'Surat Pelanggaran',
       subtitle: 'Unduh Surat Pelanggaran disini',
       imageUrl: 'assets/img/icons/dokumen.png',
-    )
+    ),
   ];
 }
