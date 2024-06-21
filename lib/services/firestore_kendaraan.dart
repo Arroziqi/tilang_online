@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class FirestoreMasukan {
+class FirestoreKendaraan {
   // get collection of Masukan
-  final CollectionReference masukans = FirebaseFirestore.instance.collection('masukan');
+  final CollectionReference kendaraans = FirebaseFirestore.instance.collection('kendaraan');
   // CREATE:
-  Future<void> addMasukan(Map<String, dynamic> data) {
+  Future<void> addKendaraan(Map<String, dynamic> data) {
     data['timestamp'] = FieldValue.serverTimestamp(); // Menggunakan timestamp dari Firestore
-    return masukans.add(data);
+    return kendaraans.add(data);
   }
 
   // READ:

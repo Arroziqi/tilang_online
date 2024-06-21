@@ -4,13 +4,15 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({super.key, required this.labelText});
+  const CustomTextFormField({super.key, required this.labelText, required this.controller});
 
   final String labelText;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       decoration: InputDecoration(
         labelText: labelText,
         border: const OutlineInputBorder(

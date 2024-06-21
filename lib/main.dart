@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
           '/home': (context) => const MainPage(),
           '/notifikasi': (context) => const NotifikasiPage(),
           '/pelanggaran': (context) => const PelanggaranPage(),
-          '/masukan': (context) => const MasukanPage(),
+          '/masukan': (context) => MasukanPage(),
           '/masukan/success': (context) => const MasukanSuccess(),
           '/kendaraan': (context) => const KendaraanPage(),
           '/kendaraan/form': (context) => const KendaraanForm(),

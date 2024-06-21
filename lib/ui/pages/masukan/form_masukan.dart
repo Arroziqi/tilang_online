@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/models/pages/masukan/input_items.dart';
+import 'package:flutter_app/services/firestore_masukan.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/masukan/components/input.dart';
 import 'package:gap/gap.dart';
 
 final controller = InputItems();
+
+// firestore
+final FirestoreMasukan firestoreMasukan = FirestoreMasukan();
+
+// text controller
+final List<TextEditingController> textControllers = List.generate(controller.items.length, (index)=>TextEditingController(),);
+
 
 class FormMasukan extends StatelessWidget {
   const FormMasukan({super.key});
@@ -16,7 +24,7 @@ class FormMasukan extends StatelessWidget {
       itemBuilder: (context, index) => Input(
         label: controller.items[index].label,
         hintText: controller.items[index].hintText,
-        type: controller.items[index].type,
+        type: controller.items[index].type, textController: textControllers[index],
         // selectItems: controller.items[index].selectItems,
       ),
       shrinkWrap: true,
@@ -26,8 +34,28 @@ class FormMasukan extends StatelessWidget {
 
   Widget buttonSubmit(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        Navigator.pushNamed(context, '/masukan/success');
+      onPressed: () async {
+        // Prepare data to be saved
+        Map<String, dynamic> data = {};
+        for (int i = 0; i < controller.items.length; i++) {
+          data[controller.items[i].label] = textControllers[i].text;
+
+          textControllers[i].clear();
+        }
+
+        // Debug: print data
+        print("Data to be added: $data");
+
+        try {
+          // Add a new data
+          await firestoreMasukan.addMasukan(data);
+          // Debug: print success message
+          print("Data added successfully");
+          Navigator.pushNamed(context, '/masukan/success');
+        } catch (e) {
+          // Debug: print error
+          print("Failed to add data: $e");
+        }
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: kPrimaryColor,

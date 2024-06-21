@@ -12,7 +12,7 @@ class MasukanPage extends StatelessWidget {
   }
 
   Widget buildContent() {
-    return const TabBarView(
+    return TabBarView(
       children: <Widget>[
         FormMasukan(),
         MasukanKosong(),
