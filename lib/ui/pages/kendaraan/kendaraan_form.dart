@@ -165,7 +165,7 @@ class _KendaraanFormState extends State<KendaraanForm> {
       await firestoreKendaraan.addKendaraan(data);
       // Debug: print success message
       print("Data added successfully");
-      Navigator.pushNamed(context, '/kendaraan/lists');
+      Navigator.pushNamed(context, '/kendaraan/view');
     } catch (e) {
       // Debug: print error
       print("Failed to add data: $e");
