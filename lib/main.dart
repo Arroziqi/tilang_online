@@ -29,7 +29,7 @@ Future<void> main() async{
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+``
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
           '/pelanggaran': (context) => const PelanggaranPage(),
           '/masukan': (context) => MasukanPage(),
           '/masukan/success': (context) => const MasukanSuccess(),
-          '/kendaraan': (context) => const KendaraanPage(),
+          '/kendaraan': (context) => const KendaraanLists(),
           '/kendaraan/form': (context) => const KendaraanForm(),
           '/kendaraan/view': (context) => const KendaraanLists(),
           '/medsos': (context) => const MediaSosialPage(),

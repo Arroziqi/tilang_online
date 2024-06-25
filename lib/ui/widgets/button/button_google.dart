@@ -11,6 +11,7 @@ class ButtonGoogle extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: defaultMargin),
       child: TextButton(
         onPressed: () {
+          //           GoogleProvider(clientId: "52856553378-ai4upaho4g4524mjh06hf32k1usot4gf.apps.googleusercontent.com");
           Navigator.pushNamed(context, '/home');
         },
         style: TextButton.styleFrom(

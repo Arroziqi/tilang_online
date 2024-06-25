@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/data_kosong.dart';
 import 'package:flutter_app/ui/pages/kendaraan/components/button.dart';
-import 'package:flutter_app/ui/widgets/button/button_primary.dart';
 
 class KendaraanKosong extends StatelessWidget {
   const KendaraanKosong({super.key});

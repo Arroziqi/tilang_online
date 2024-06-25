@@ -1,7 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/models/pages/kendaraan/kendaraan_items.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/kendaraan/components/tile.dart';
+import 'package:flutter_app/ui/pages/kendaraan/kendaraan_form.dart';
+import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
 import 'package:gap/gap.dart';
 
 import 'components/build_app_bar.dart';
@@ -12,7 +15,8 @@ final controller = KendaraanItems();
 class KendaraanLists extends StatelessWidget {
   const KendaraanLists({super.key});
 
-  Widget buildContent() {
+  Widget buildContent(BuildContext context, List kendaraanList) {
+
     return Padding(
       padding: EdgeInsets.only(
         left: defaultMargin,
@@ -20,12 +24,20 @@ class KendaraanLists extends StatelessWidget {
         top: 31,
       ),
       child: ListView.separated(
-        itemCount: controller.items.length,
-        itemBuilder: (context, index) => Tile(
-            imgUrl: controller.items[index].imgUrl,
-            platNomer: controller.items[index].platNomer,
-            nik: controller.items[index].nik,
-            isVerified: controller.items[index].isVerified),
+        itemCount: kendaraanList.length,
+        itemBuilder: (context, index) {
+          DocumentSnapshot documentSnapshot = kendaraanList[index];
+          // String docID = documentSnapshot.id;
+
+          Map<String, dynamic> data = documentSnapshot.data() as Map<String, dynamic>;
+
+          return Tile(
+              // dummy img
+              imgUrl: 'assets/img/kendaraan/motor1.png',
+              platNomer: data['No. Polisi / TKNB'],
+              nik: data['NIK'],
+              isVerified: data['isVerified'],);
+        },
         separatorBuilder: (context, index)=>Gap(31),
       ),
     );
@@ -35,7 +47,19 @@ class KendaraanLists extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body: buildContent(),
+      body: StreamBuilder<QuerySnapshot>(
+        stream: firestoreKendaraan.getKendaraans(),
+        builder: (context, snapshot){
+          if(snapshot.hasData){
+            List kendaraanList = snapshot.data!.docs;
+            return buildContent(context, kendaraanList);
+          }
+          else {
+            return KendaraanPage();
+          }
+        },
+      ),
+      // body: buildContent(),
       bottomSheet: Button(
           onPressed: () {
             Navigator.pushNamed(context, '/kendaraan/form');
