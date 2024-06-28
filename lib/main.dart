@@ -9,6 +9,7 @@ import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
 import 'package:flutter_app/ui/pages/notifikasi/pelanggaran/notifikasi_pelanggaran.dart';
 import 'package:flutter_app/ui/pages/notifikasi/pelanggaran/notifikasi_pelanggaran_view.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/pelanggaran_page.dart';
+import 'package:flutter_app/ui/pages/profil/data_pengemudi/data_pengemudi.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_app/cubit/page_cubit.dart';
@@ -59,6 +60,7 @@ class MyApp extends StatelessWidget {
           '/medsos': (context) => const MediaSosialPage(),
           '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
           '/pelanggaran/view': (context) => const NotifikasiPelanggaranView(),
+          '/profile/data-pengemudi': (context) => const DataPengemudi(),
         },
       ),
     );
