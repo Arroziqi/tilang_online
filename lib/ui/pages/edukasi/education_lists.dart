@@ -8,10 +8,13 @@ final controller = EducationTileItems();
 Widget educationLists() {
   return ListTiles(
     itemCount: controller.items.length,
-    itemBuilder: (context, index) => CustomListTile(
-      leading: Image.asset(controller.items[index].imageUrl),
-      title: Center(
-        child: Text(controller.items[index].text),
+    itemBuilder: (context, index) => GestureDetector(
+      onTap: (){Navigator.pushNamed(context, controller.items[index].routeName);},
+      child: CustomListTile(
+        leading: Image.asset(controller.items[index].imageUrl),
+        title: Center(
+          child: Text(controller.items[index].text),
+        ),
       ),
     ),
     gap: 20,

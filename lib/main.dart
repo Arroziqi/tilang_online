@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ui/pages/edukasi/aturan/aturan_page.dart';
+import 'package:flutter_app/ui/pages/edukasi/tutorial/tutorial_page.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_form.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_lists.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_page.dart';
@@ -61,6 +63,8 @@ class MyApp extends StatelessWidget {
           '/no-pelanggaran': (context) => const NotifikasiPelanggaran(),
           '/pelanggaran/view': (context) => const NotifikasiPelanggaranView(),
           '/profile/data-pengemudi': (context) => const DataPengemudi(),
+          '/edukasi/tutorial': (context) => const TutorialPage(),
+          '/edukasi/aturan': (context) => const AturanPage(),
         },
       ),
     );
