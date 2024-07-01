@@ -1,0 +1,632 @@
+{
+   "checksum": "40550019d7ac972371fbbb567d004a68",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13300007370502618",
+            "date_last_used": "0",
+            "guid": "571a2d62-c9d0-4acd-b584-3c0bd6ea1be4",
+            "id": "11",
+            "name": "CS 2021!!! - Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/1U0cvqStPVuux7QOc_7u5gckg0H0OJdJs"
+         }, {
+            "date_added": "13300344470983427",
+            "date_last_used": "0",
+            "guid": "8685942f-b0a4-4177-bc65-d1dd628cd7f4",
+            "id": "12",
+            "name": "110 Cool Websites To Kill Time When Bored In 2022",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://rorlt.com/cool-websites/"
+         }, {
+            "date_added": "13300473826618951",
+            "date_last_used": "0",
+            "guid": "798ae787-3ca8-47ea-9c58-12dd556e0753",
+            "id": "13",
+            "name": "Backend Developer Roadmap: Learn to become a modern backend developer",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://roadmap.sh/backend"
+         }, {
+            "date_added": "13300731595790658",
+            "date_last_used": "13332254135141856",
+            "guid": "0d15908e-9504-47ff-9bea-6c4eff896ed8",
+            "id": "14",
+            "name": "Worst Fit Memory Management Algorithm Program in C/C++ - japp.io",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://japp.io/algorithms/memory-management/worst-fit-memory-management-algorithm-program-in-c-c/"
+         }, {
+            "date_added": "13342454910777375",
+            "date_last_used": "0",
+            "guid": "861d3e50-02ac-4bf7-8e67-0c9f3ded9a2b",
+            "id": "15",
+            "name": "CHORD SIMPLE GAMPANG (All My Loving - The Beatles) (Tutorial Gitar) Easy Chords!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=Md5tHSj9lMo"
+         }, {
+            "date_added": "13325358442406077",
+            "date_last_used": "13348429960916842",
+            "guid": "70d12a36-bd9a-496b-85d5-af4d2a570802",
+            "id": "16",
+            "name": "SKYRIM Save Cleaner at Skyrim Nexus - Mods and Community",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.nexusmods.com/skyrim/mods/31724"
+         }, {
+            "date_added": "13355126373393518",
+            "date_last_used": "0",
+            "guid": "4dc3e4e2-9fe3-445c-83fe-98bdfe32222f",
+            "id": "17",
+            "name": "Tutorial membuat Webcam dengan Framework Laravel",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=56fqM_gTwV8&pp=ygUSbGFyYXZlbCB3ZWIgY2FtZXJh"
+         }, {
+            "date_added": "13300731600523412",
+            "date_last_used": "0",
+            "guid": "6e6401b2-78af-4e47-9a98-726c381b1767",
+            "id": "18",
+            "name": "Best Fit Memory Management Algorithm Program in C/C++ - japp.io",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://japp.io/algorithms/memory-management/best-fit-memory-management-algorithm-program-in-c-c/"
+         }, {
+            "date_added": "13347254978799602",
+            "date_last_used": "0",
+            "guid": "fa90815c-7c99-4688-922a-d23151223513",
+            "id": "19",
+            "name": "Rekomendasi Hape 2 Jutaan paling Komplit di 2023 !",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=OUYlGTk1Wks&pp=ygUccmVrb21lbmRhc2kgaHAgMiBqdXRhYW4gMjAyMw%3D%3D"
+         }, {
+            "date_added": "13300731605848438",
+            "date_last_used": "13349976876106768",
+            "guid": "2f1f379a-e0ed-4b80-b892-96212ba53b2e",
+            "id": "20",
+            "name": "First Fit Memory Management Algorithm Program in C/C++ - japp.io",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://japp.io/algorithms/memory-management/first-fit-memory-management-algorithm-program-in-c-c/"
+         }, {
+            "date_added": "13323494430158214",
+            "date_last_used": "13339351467402542",
+            "guid": "9d967ddb-a70b-43bf-9025-637c76a35a38",
+            "id": "21",
+            "name": "The Best Charm Combos In Hollow Knight - Game Rant",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://gamerant.com/hollow-knight-best-charm-combo-builds/"
+         }, {
+            "date_added": "13300766916741659",
+            "date_last_used": "0",
+            "guid": "0b75043c-f7e8-465c-8909-f5b3f56333a0",
+            "id": "22",
+            "name": "FIFO Page Replacement Algorithm Program in C/C++ - japp.io",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://japp.io/algorithms/page-replacement/fifo-page-replacement-algorithm-program-in-c-c/"
+         }, {
+            "date_added": "13300769937616022",
+            "date_last_used": "0",
+            "guid": "31162e01-6bf7-49c3-bb83-3b3529f8f62c",
+            "id": "23",
+            "name": "Theory of Computation & Automata Theory - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev"
+         }, {
+            "date_added": "13301170031938037",
+            "date_last_used": "0",
+            "guid": "9bed9926-ce9b-4822-9bdf-6a20386cd2ec",
+            "id": "24",
+            "name": "What is Sorting in C++: Bubble Sort, Insertion Sort & More | Simplilearn",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.simplilearn.com/tutorials/cpp-tutorial/sorting-in-cpp"
+         }, {
+            "date_added": "13303484718758094",
+            "date_last_used": "0",
+            "guid": "d90f568e-e60c-4726-8451-ddd94d7c05a2",
+            "id": "25",
+            "name": "DOES YOUR GAMING LAPTOP HAVE BAD BATTERY? An investigation into the inconsistent NVIDIA Optimus implementation on Windows : GamingLaptops",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.reddit.com/r/GamingLaptops/comments/w7uuda/does_your_gaming_laptop_have_bad_battery_an/"
+         }, {
+            "date_added": "13306131223703335",
+            "date_last_used": "0",
+            "guid": "6a1bf9a2-34b5-46d7-86a0-aa97da2c0ded",
+            "id": "26",
+            "name": "Game Dev Tycoon Guide 2021 Sliders",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://cix.patienthealthyself.info/bsi/game-dev-tycoon-guide-2021-sliders/"
+         }, {
+            "date_added": "13306135964695655",
+            "date_last_used": "0",
+            "guid": "7255ac85-c65a-4126-9bbf-b293f1f7cb29",
+            "id": "27",
+            "name": "Pirated Games Mega Thread",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://rentry.org/pgames-mega-thread"
+         }, {
+            "date_added": "13307261158827079",
+            "date_last_used": "0",
+            "guid": "5fc60a9f-fb24-4d9d-8fb8-041185c12e57",
+            "id": "28",
+            "name": "Kitab Riyadhus Shalihin Karya Imam Nawawi Dan Terjemah [For PDF]",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://terjemahkitab.com/terjemah-riyadhus-shalihin/"
+         }, {
+            "date_added": "13307797366559066",
+            "date_last_used": "0",
+            "guid": "70010221-69a6-4832-8e6c-270f872d5344",
+            "id": "29",
+            "name": "Default Title | Email verification code",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://fakemail.email/en/view/NQd6qXmJoOxbNke3lK85k4aV"
+         }, {
+            "date_added": "13313122488447465",
+            "date_last_used": "0",
+            "guid": "2fdbf476-48f5-4392-bc79-3ef885c9e02a",
+            "id": "30",
+            "name": "Contoh Proposal Penjualan Berbasis Web Dengan Menggunakan Php Mysql ~ NUL AFRIANTO IT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://nulbunga.blogspot.com/2018/01/contoh-proposal-penjualan-berbasis-web.html"
+         }, {
+            "date_added": "13182247381489725",
+            "date_last_used": "0",
+            "guid": "f01bf56b-c937-442e-854c-b29b87329228",
+            "id": "31",
+            "name": "Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/0B7-yYcgfAXDjdi1lYlJYQW9PZXc"
+         }, {
+            "date_added": "13321704952864221",
+            "date_last_used": "0",
+            "guid": "3cea01ff-7db4-4a95-be6e-b7e06b970d1e",
+            "id": "32",
+            "name": "10+ Database Project Terbaik yang Wajib Anda Coba!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.niagahoster.co.id/blog/database-terpopuler/"
+         }, {
+            "date_added": "13321704955779091",
+            "date_last_used": "0",
+            "guid": "8e78c0ca-6c79-45b9-96e7-b8588e9c216c",
+            "id": "33",
+            "name": "Order Hosting | Web Hosting Indonesia Gratis SSL - Niagahoster",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.niagahoster.co.id/orderhosting/26?period=3Y"
+         }, {
+            "date_added": "13323371455318694",
+            "date_last_used": "0",
+            "guid": "a6fa9ee3-bdf6-4722-b953-e032fa49e7d8",
+            "id": "34",
+            "name": "Bloom - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=_dIWHJfAZ8g&ab_channel=TroyeSivan-Topic"
+         }, {
+            "date_added": "13324407297729886",
+            "date_last_used": "0",
+            "guid": "e5332abf-acdf-4353-9c50-ad76eab4a078",
+            "id": "35",
+            "name": "Article Rewriter Tool - Free Article Spinner (3 Advanced Modes)",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.articlerewriter.net/"
+         }, {
+            "date_added": "13327120529987557",
+            "date_last_used": "0",
+            "guid": "2fed00b5-fd32-4b67-90ca-e7bdc862ff03",
+            "id": "36",
+            "name": "The Ultimate All-in-One Face Fix Routine｜Just 5-Minute Everyday｜Balancing Facial Asymmetry - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=oJIk2PyukjY&ab_channel=HisDream"
+         }, {
+            "date_added": "13328756405592518",
+            "date_last_used": "0",
+            "guid": "35efebf4-1147-4c94-9478-2a9298ca376a",
+            "id": "37",
+            "name": "Filecrypt Monster HUnter",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://filecrypt.co/Container/7219449AA3.html"
+         }, {
+            "date_added": "13329813430949717",
+            "date_last_used": "0",
+            "guid": "f14b8b67-d47c-4542-aefa-c98b25a44b90",
+            "id": "38",
+            "name": "Kingdom come royal - OneDrive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://0hktc-my.sharepoint.com/personal/s1-dodi_onedrive-a2_cybar_xyz/_layouts/15/onedrive.aspx?ga=1&isAscending=true&id=%2Fpersonal%2Fs1%2Ddodi%5Fonedrive%2Da2%5Fcybar%5Fxyz%2FDocuments%2FDODI11%2FKingdom%20come%20royal&sortField=LinkFilename"
+         }, {
+            "date_added": "13329903758024904",
+            "date_last_used": "0",
+            "guid": "4ed7247c-dadd-4b39-ab31-3ea25a5efaad",
+            "id": "39",
+            "name": "Releases · SafeExamBrowser/seb-win-refactoring",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/SafeExamBrowser/seb-win-refactoring/releases"
+         }, {
+            "date_added": "13329903894974580",
+            "date_last_used": "0",
+            "guid": "5ee4e2c4-74a2-408c-98e6-b3e8c2783da4",
+            "id": "40",
+            "name": "nxvvvv/safe-exam-browser-bypass: This is a VM detection and display detection bypass for SEB.",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/nxvvvv/safe-exam-browser-bypass"
+         }, {
+            "date_added": "13329973277178846",
+            "date_last_used": "0",
+            "guid": "ba0164e8-641e-472f-8211-c62a03481797",
+            "id": "41",
+            "name": "Angels Like You Guitar Tutorial - Miley Cyrus Guitar Lesson |Fingerpicking + Chords + Solo| - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=O4w-4QlngmE&ab_channel=GuitarZero2Hero"
+         }, {
+            "date_added": "13330009534532027",
+            "date_last_used": "0",
+            "guid": "e59e2ee0-cb4e-490a-b3a8-88c3117acb74",
+            "id": "42",
+            "name": "The Sims 4",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://filecrypt.co/Container/6DF8E4B1B1.html"
+         }, {
+            "date_added": "13330020013906985",
+            "date_last_used": "0",
+            "guid": "cd996f4e-408a-4ad7-9330-1e5d1a3cfc80",
+            "id": "43",
+            "name": "(1) About You |©The 1975 |【Guitar Cover】with TABS - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=eylHMEVd8_4&ab_channel=MikeBassAtsushi"
+         }, {
+            "date_added": "13331483875606648",
+            "date_last_used": "0",
+            "guid": "f88c6695-4aa9-4dae-80fc-f47a2717b7f8",
+            "id": "44",
+            "name": "Yakuza 0",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://filecrypt.co/Container/22AC6FE447.html"
+         }, {
+            "date_added": "13331734134262821",
+            "date_last_used": "0",
+            "guid": "8e9bc0bf-d0e9-4583-9e11-e9868dfa0676",
+            "id": "45",
+            "name": "GitHub - cloudcommunity/Free-Books: Free eBooks about cloud computing and related topics",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/cloudcommunity/Free-Books"
+         }, {
+            "date_added": "13332526859090011",
+            "date_last_used": "0",
+            "guid": "1b5e8fc4-4807-481a-85f8-cfdaf37834a2",
+            "id": "46",
+            "name": "Venge.io - FPS io game",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://venge.io/#DD40BE"
+         }, {
+            "date_added": "13334126107132656",
+            "date_last_used": "0",
+            "guid": "cfb82e95-1b0f-4bee-9333-d8fb5c1e3585",
+            "id": "47",
+            "name": "Pirated Games Mega Thread",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://rentry.org/pgames#game-search-engines"
+         }, {
+            "date_added": "13341302453277591",
+            "date_last_used": "0",
+            "guid": "f1f6fb40-2316-4764-be4a-62ed1c5f6bdc",
+            "id": "48",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "HTML Cheat Sheet - Learn web development | MDN",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Cheatsheet"
+         }, {
+            "date_added": "13344753999313129",
+            "date_last_used": "0",
+            "guid": "7cbdc927-7ac1-40ba-b14a-a29736f8cf07",
+            "id": "49",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Predicting Stunting in Rwanda Using Artificial Neural Networks: A Demographic Health Survey 2020 Analysis",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://zenodo.org/records/8424559"
+         }, {
+            "date_added": "13345136834839174",
+            "date_last_used": "0",
+            "guid": "f0cd8168-f004-4f47-9515-4a401bcb34ec",
+            "id": "50",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "dire",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://universitaspertamina.ac.id/profile/organisasi"
+         }, {
+            "date_added": "13350635726152080",
+            "date_last_used": "0",
+            "guid": "a0c9a8d7-9c5b-4184-b2fb-804362e2f248",
+            "id": "51",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "file:///C:/Users/Adit/OneDrive%20-%20Universitas%20Pertamina/KULIAH/SEMESTER%205/KAPITA%20SELEKTA%20SAINS%20DATA-CS7/Tugas%20Besar/Pedoman%20Tugas%20Akhir%20Universitas%20Pertamina%202018.pdf"
+         }, {
+            "date_added": "13350646648427126",
+            "date_last_used": "0",
+            "guid": "1fffca1c-fe3b-4d1b-82a2-c4c2c33293df",
+            "id": "52",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Mini Learning",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://127.0.0.1:8000/home"
+         }, {
+            "children": [ {
+               "date_added": "13321274619531429",
+               "date_last_used": "0",
+               "guid": "ca2b172f-00da-4019-a521-b53c24de1b2c",
+               "id": "54",
+               "name": "Acer",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.acer.com/"
+            }, {
+               "date_added": "13355028163917410",
+               "date_last_used": "0",
+               "guid": "6fe01c5a-bc36-4ba2-9416-c21f6c6897f9",
+               "id": "55",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Welcome • freemediaheckyeah",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://fmhy.net/"
+            } ],
+            "date_added": "13364226014610399",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "592e11aa-33cf-45a6-a582-e267f2e5d9e3",
+            "id": "53",
+            "name": "Acer",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13356618132624013",
+            "date_last_used": "0",
+            "guid": "3d47de31-039d-42f9-a9db-859e3d4d699c",
+            "id": "56",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Privacy Guides: Your Independent Privacy and Security Resource",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.privacyguides.org/en/"
+         }, {
+            "date_added": "13358948429457711",
+            "date_last_used": "0",
+            "guid": "36cfbdea-0a6e-4e50-b43c-94381aeb6bd6",
+            "id": "57",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "user",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://elearning.universitaspertamina.ac.id/course/view.php?id=9999"
+         }, {
+            "date_added": "13360328056910575",
+            "date_last_used": "0",
+            "guid": "643277fa-034b-4739-915c-10ec1ceb0744",
+            "id": "58",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Project Hunt - FitGirl Repacks",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://fitgirl-repacks.site/project-hunt/"
+         }, {
+            "date_added": "13361277565120781",
+            "date_last_used": "0",
+            "guid": "0f08b9a5-159b-441d-b396-bcd92dfe13f1",
+            "id": "59",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Decision Tree Algorithm",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://towardsmachinelearning.org/decision-tree-algorithm/"
+         }, {
+            "date_added": "13363298978700183",
+            "date_last_used": "0",
+            "guid": "cd83ffb7-6611-41af-8e4e-18f8e7db7787",
+            "id": "60",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Firebase Email and Password Authentication Flutter || Login Signup Flutter Firebase - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=ih9q-I5tB4o"
+         }, {
+            "date_added": "13363713681846626",
+            "date_last_used": "0",
+            "guid": "4ca45a7c-1a24-4af0-bfac-cdf71cc6bcb7",
+            "id": "61",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "data",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027502/"
+         }, {
+            "date_added": "13363713724493864",
+            "date_last_used": "0",
+            "guid": "06479755-e521-4463-bd23-6e7e2469dfb7",
+            "id": "62",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "tumo",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.ncbi.nlm.nih.gov/medgen/?linkname=pmc_medgen&from_uid=10027502"
+         }, {
+            "date_added": "13364226005013507",
+            "date_last_used": "0",
+            "guid": "90615c0f-6dc1-4175-8c00-96430caf8c1b",
+            "id": "8",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/agoda.html?utm_source=win32&utm_medium=favorite"
+         }, {
+            "date_added": "13364226005013115",
+            "date_last_used": "0",
+            "guid": "a9b3a0af-9d2f-4d17-b6c5-3327fe40fd25",
+            "id": "7",
+            "name": "Amazon",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/amazon.html?utm_source=win32&utm_medium=favorite"
+         }, {
+            "date_added": "13364289818544696",
+            "date_last_used": "0",
+            "guid": "035c7ec3-1fcc-4ffd-b0aa-da4e84903e22",
+            "id": "68",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ChatGPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chatgpt.com/c/03da208d-adb5-4601-a043-1af87d221774"
+         } ],
+         "date_added": "13364226004795814",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13364226004795817",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13364226004795819",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCEHM9m6QAQAAEgAqGFdsMXA1SmFveDZqSmUxKzJ2NjV1bHc9PUgDoAYMErABCD4SqwEKHHlxRnQxd3dyT2FLaFVQbzh2TTJRTjcwdG16dz0SJDA2NDc5NzU1LWU1MjEtNDQ2My1iZDIzLTZlN2UyNDY5ZGZiNxgAIAIoAjCE0e3JhjI4z9jJ1YQyQJGv7cmGMkocaWdUczNyRW1yQjNGell2QjBXMG04eGxoYUZzPVonIiX/////AAAABfplcis4K1hiK2dCYUJRTEJvOWFhcHNoTHBHcGc9ZY+TiRUSqAEIFhKjAQocdnovUWhMSXJJT1UzKzFueUV6aGk4UVE1VDd3PRIkMGI3NTA0M2MtZjdlOC00NjVjLTg5MDktZjViM2Y1NjMzM2EwGAAgAigCMOvQ7cmGMjiP26P5izFAgq/tyYYyShxBNitmdXFqbjVEbitqbWZuTjAvNW1OVmJmODQ9Wh8iHf54TnFBMy9XWS9FVTBJWktSWDN4YUN4MjZGU009ZZeUSVMSqAEIFBKjAQocbGRUOHFuSkNQRTlrZVdkck5SRTdkRnNMbW9jPRIkMmYxZjM3OWEtZTBlZC00YjgwLWI4OTItOTYyMTJiYTUzYjJlGAAgAigCMJDb7cmGMjjr86P5izFAga/tyYYyShxWRXBMQXFPRnR1NmdZdExmYmJKeEdBVzVHVHc9Wh8iHftabGhZSVRQOEV1blZQSHhYRU9adGNHTEpnQzA9ZZoXX0MSsAEIPBKrAQocaDFZbjNCVHVpU2ZUTnZOc05CSTA0STBEUHRnPRIkY2Q4M2ZmYjctNjYxMS00MWFmLThlNGUtMThmOGU3ZGI3Nzg3GAAgAigCMIvR7cmGMjjxmuePgzJAka/tyYYyShxIQmpNdUc3V3NDQlhtR2ZCbXdFKzgxSHpMV009WiciJf////8AAAAF6VFja3ZPQ3lEZUo3VU1ucEEzK1hYK2dOZHI4bz1lOPk5MxKwAQg9EqsBChw3MzNWaTZzVE1XUzhQc3pSZEtIaCtPZDVoUTA9EiQ0Y2E0NWE3Yy0xYTI0LTRhZjAtYmZhYy1jZGY3MWNjNmJjYjcYACACKAIw/tDtyYYyOMGKx9WEMkCRr+3JhjJKHFFTQU1rWFlaby9EYVZvbTM0eWxTUUVEdE9Xdz1aJyIl/////wAAAAX0R0VsTkxOOTFxdStWV0pzVXVIZGhBVE92UHhjPWWPk4kVEq8BCDkSqgEKHGZhQ0NHZzhhd2tzdXdwOW9ndmZPVjZWVnAxaz0SJDM2Y2ZiZGVhLTBhNmUtNGU1MC1iNDNjLTk0MzgxYWViNmJkNhgAIAIoAjDdl67mhjI4kaqm9fIxQN2XruaGMkocTVFjcXBoUmFhUXE2K1pSKzNyREN6K1FGRW8wPVomIiT/////AAAABUxiNnhSSmIzekJud0llcVp2M0hNUnhabW51RT1lxB3p0xKrAQgrEqYBChxsOVBFMWdxYW1YbU9uSncwazB4eUZ1Rk5lcW89EiRjZDk5NmY0ZS00MDhhLTRhZDctOTMzMC0xZTVkMWEzY2ZjODAYACACKAIwiNHtyYYyOLL1o/mLMUCLr+3JhjJKHFQ3RUhBOGk5bmFiU1ZiRlZjTHE0VUNZamFGVT1aIiIg////9ms5c3gzZkdYQi9jNlI2UEZBN1puSFVpUmNNZz1lOPk5MxKwAQg6EqsBChxXTEVTWkR1akNadnI1dVE1YVJLdEltaERTRXM9EiQ2NDMyNzdmYS0wMzRiLTQ3MzktOTE1Yy0xMGVjMWNlYjA3NDQYACACKAIwkdvtyYYyOJnMk4f4MUCQr+3JhjJKHElUOHp5bWdLRW1yYnFRMjN1NWVtT01LM2wrZz1aJyIl/////wAAAAWmS09mR2RFWEl0QlJoZU80cUNVNDZHSGZGMGRJPWUCVqdMEqkBCBwSpAEKHHVZRTNSaHp5VVJqellka3N3UmNGNXFvRDQzcz0SJDVmYzYwYTlmLWZiMjQtNGQ5ZC04ZmI4LTA0MTE4NWMxMmU1NxgAIAIoAjDt0O3JhjI4sdqj+YsxQISv7cmGMkocMHk0ellieHpsVjMreFlKZWttY05JTHM0bXZzPVogIh7/+2dlOW96RnFwcWh6ZzVZZjVsTzIzSG9MSGI2RT1ljwmS8hKrAQgqEqYBChxYL0c5cTlhbTNWZlJFdEdCVVU4SEFnWUoxZ3c9EiRlNTllMmVlMC1jYjRlLTQ5MGEtYjNhOC04OGMzMTE3YWNiNzQYACACKAIwjdvtyYYyOJf1o/mLMUCLr+3JhjJKHGdPdkdDc2FrUGpBNWVDT01pK3YyZFdhR3RXRT1aIiIg////7GV5aTc4bC9pOEpVNXFJcXkrSzNzd1duQWJOST1lcftAaxKwAQg0EqsBChw0T1E1d29yZWU0RzhaRHN6RDkzV1EzY2NRek09EiQxZmZmY2ExYy1mZTNiLTRkMWItODJhMi1jNGMyYzMzMjkzZGYYACAAKAAwwrba/tMxOIW42v7TMUCFuNr+0zFKHHFSL2hYTCtYK3JkekxOMzd2cG1QRU9rNnQrOD1aJyIl/////wAAAAT7eXJyb0pYa1k0bEdVdjF3VlNUQnlHVzBJNjM4PWUAAAAAEqoBCCcSpQEKHGJUU2tKTTc5THBhZGFmWk9BOFl6eW5mRWFQYz0SJDRlZDcyNDdjLWRhZGQtNGIzOS1hYjMxLTNlYTI1YTVlZmFhZBgAIAIoAjD30O3JhjI4ot6j+YsxQImv7cmGMkocek1MQVM0MEp1VC9zMHNTU1FFQmNkczVRVkw0PVohIh////9nZ3RkYXNOVDNoQzB3TWRDZ3daRVZXQVhpY2M9ZcClKLoSqAEIFRKjAQocVnF6d0ZQKzZoSnRVVW5aRitNTTRHYzVMdldzPRIkOWQ5NjdkZGItYTcwYi00M2JmLTkwMjUtNjM3Yzc2YTM1YTM4GAAgAigCMIzR7cmGMjiw26P5izFAgq/tyYYyShxWaW9NaEhoSjhWRXpQWCtZSDl2anRoUVhzV0k9Wh8iHf1SZUZLQzkybk5ERmp0bzdiU0wxN0R0T2JqNEk9ZSysaZYSsAEINRKrAQocMEkveFNRNk9xU2xPM3lvdHdvVDF2RjJMVnVJPRIkNTkyZTExYWEtMzNjZi00NWE2LWE1ODItZTI2N2YyZTVkOWUzGAAgACgAMJTgqK7jMTjb66iu4zFA2+uoruMxShxzblg1SVI0RXJ6Z1B6TU5IaDVIVDArZ0hBVzg9WiciJf////8AAAAE/UcreTdIZWNsTjdwckd0dFYyMkZ2UEdrdUJNND1lAAAAABKoAQgSEqMBChxNcFI0RTBjR29kUUpxa0pjMjlucHlSVE05S1k9EiQ2ZTY0MDFiMi03OGFmLTRlNDctOWE5OC03MjZjMzgxYjE3NjcYACACKAIw+9DtyYYyONDco/mLMUCAr+3JhjJKHEdTUnNzQ3JQK3N1K3J2aTRWKzgyU1d3b2tJOD1aHyId93FvbjhGNjEwYlJYY0pOdmRwTXlQcjFzOTNFaz1ll5RJUxKnAQg2EqIBChwydjJkbjNwc09hOVZFdTJuRk9wRDZWWlZDL2c9EiRjYTJiMTcyZi0wMGRhLTQwMTktYTUyMS1iNTNjMjRkZTFiMmMYACAAKAAwleCoruMxOIDsqK7jMUCA7Kiu4zFKHHFTL29xL0NPWmx2ZDluU0tyZmxxdXgyaVJKND1aHiIcc0Y1Rk1sbzYvTEkydDAwQ3lqVG9zcjdXNUFNPWUAAAAAEqsBCCgSpgEKHFVzQUZWRjdwUG8wckllVnc1dmltaFBDL0xpbz0SJDVlZTRlMmM0LTc0YTItNDA4Yy05OGU2LWIzZThjMjc4M2RhNBgAIAIoAjCJ0e3JhjI43fSj+YsxQIqv7cmGMkocVTNvMHA0VXZhRTJRTENWRHF0bC9sQTBySlNNPVoiIiD///+zSkhSVU1WMCtoMEhMeTBDb0RrNnIxcnNmVXlZPWXApSi6EqgBCA0SowEKHE5NVVVKRmpKQlBxMzVMT0Vlb1pmZ2srcU41dz0SJDc5OGFlNzg3LTNjYTgtNDdlYS05YzU4LTEyZGQ1NTZlMDc1MxgAIAIoAjCO0e3JhjI4ltmj+YsxQP6u7cmGMkocclJSNGhrRTA1QzJySmhMOFZ1QS9BSU9DUW40PVofIh28RFVrNmZ6WWx1SUV5OU5kMWR3UUxVa1FTdkdFPWX45JVTEqkBCB8SpAEKHGIwSzl6RWlUUVh3UFhkZFlSRDE5b0grUjVVTT0SJGYwMWJmNTZiLWM5MzctNDQyZS04NTRjLWIyOWI4NzMyOTIyOBgAIAIoAjD50O3JhjI4+PSj+YsxQIav7cmGMkocaVp5RjFWR0VtV0xzck83cTFqRXdjYVAvNUprPVogIh7//25Qd2RpSjluRm5CWFpJd3BTUjNMbXZ6R1hQYz1lugosURKwAQg7EqsBChxTVEMvTXIwL0ZZM3RiVzU3bGpER1dGMzUzK1k9EiQwZjA4YjlhNS0xNTliLTQ0MWQtYjM5Ni1iY2Q5MmRmZTEzZjEYACACKAIwgNHtyYYyOMac9sv7MUCQr+3JhjJKHE5KQmtMYkR1WmpLdkZkTmVUSE05TXhYblljMD1aJyIl/////wAAAAXTZkxESEtwMDdGTXh3SDBFS2NDT0MrWk5BcG1VPWXY3kveEqoBCCYSpQEKHE4xNjgwZnBqUUZwZk1aMnY4ZlRXMHZDVGxKMD0SJGYxNGI4YjY3LWQ0N2MtNDU0Mi1hZWZhLWM5OGIyNWE0NGI5MBgAIAIoAjD/0O3JhjI4qPSj+YsxQImv7cmGMkocK29pYTRtalNIUkxkYnNhNkl3Ni9xek9nVktBPVohIh////5OSk84aWVURDNHZ0FCSmF1aS9GV0MyTXlHR2s9ZZtbpScSsAEIOBKrAQocbkxqKzMvcVBTSzZZUk9QTTRXVTRLRk8wM2djPRIkM2Q0N2RlMzEtMDM5ZC00MmY5LWE5ZGItODU5ZTNkNGQ2OTljGAAgAigCMIfR7cmGMji+h5Ge6jFAj6/tyYYyShw5MjJhTEgrTFAxS2txWDBEb3FEbE1RV05FMzA9WiciJf////8AAAAE/jRtMmMzbnAxMVY0bWVTZUM1c2owWFp0NCtWVT1l2NnMFxKrAQgsEqYBChw5MDVaY3MvcEs1TkdkYzhzM041WVo0dHY0NGM9EiRmODhjNjY5NS00YWE5LTRkYWUtODBmYy1mNDdhMjcxN2I3ZjgYACACKAIwg9HtyYYyOJu0l82MMUCMr+3JhjJKHCtHeUZYQ3NQdnROakRzTkUrRFVIZVNuS2Jobz1aIiIg////+2dRTElLeVo2UDhmN0hzT0FxMnBKcGVzbHllcz1lcftAaxKwAQgwEqsBChxoMkMzbENncU1odGtBSFJaRHh2Z0c5N00wZlk9EiRmMWY2ZmI0MC0yMzE2LTQ3NjQtYmU0YS02MmVkMWM1ZjZiZGMYACACKAIwj9vtyYYyOO2bhpexMUCNr+3JhjJKHFEwK3RIeWVlZjk5bGJleG9rVDJLWEpuc3ZWMD1aJyIl/////wAAAAS4MTl5SVQ1ZTVCUFB1YmZDdUxmNU5XMEUyK0h3PWVtoJ/1EqoBCCUSpQEKHGdyRXFIMTNOTVFHZDdjRktUL3g1UmIrdjdaOD0SJDM1ZWZlYmY0LTExNDctNGM5NC05NDc4LTJhOTI5OGNhMzc2YRgAIAIoAjCM2+3JhjI4v92j+YsxQImv7cmGMkocNisxVXRrVythaU5DQVBtaHdGRFlldzVnb3ZrPVohIh////1UTFRmcDJnU3JTM2VlVEFuMk1wYlRzTTRXNmc9ZXH7QGsSqgEIJBKlAQocTGhudnNCNnZHN1loS1hYY1NYdUZQbEEyYkw0PRIkMmZlZDAwYjUtZmQzMi00YjY3LTkwY2EtZTdiZGM4NjJmZjAzGAAgAigCMIvb7cmGMjiI9KP5izFAiK/tyYYyShxFL1JyQVRBd3Z6NVZpR3FiTDQ5Unp4VmtaQ3c9WiEiH///+1FiMlRCajU0ZWJBM0pMamY5NHNhcUtZWUY2bz1lOPk5MxKqAQghEqUBChxRbmVIN0swOVdJU3RsaXlNS2tDRTJFMzlGU009EiQ4ZTc4YzBjYS02Yzc5LTQ1YjktOTZlNy1iODU4OGU5YzIxNmMYACACKAIw/NDtyYYyOJPco/mLMUCHr+3JhjJKHFZ5aGt1eno4UkdiQXBGU1dGemlCSmVrbUU0MD1aISIf///bRXVUMXBkQjM3LzFGVXNLTmxFRUlZVk0xcWhRPWWLOUDBEqkBCB0SpAEKHE4rUnhnYjNZclZPTFNmL01sa0RiWm5yVEFVcz0SJDcwMDEwMjIxLTY5YTYtNDgzMi04ZTZjLTI3MGY4NzJkNTM0NBgAIAIoAjD40O3JhjI4392j+YsxQISv7cmGMkocVUhtaklQdzRkcERpSzRUV2dqK0dpcS9EVDc4PVogIh7//UhuYVV2Q1FRVS9TWVVXak05OFNVK1JvaUl2UT1luahi/BKpAQgbEqQBChxPSXkzNVFYUHp0VWdiRXhQSkRpWFN5M0ZyQTA9EiQ3MjU1YWM4NS1jNjVhLTQxMjYtOWJiZi1iMjkzZjFmN2NiMjkYACACKAIwgtHtyYYyOIDeo/mLMUCDr+3JhjJKHFdHYzBOQnNja2lYTEtFN2RzVGY4VmFGRDZ2Zz1aICIe//dsc0p5aVpoeVc3MkRzQ2lOQjV5S00yMFlXemc9ZdheVsoSsAEIMRKrAQocYWpOcGNyVWsyUEVUK3R3WFkzaDE3WittUFQwPRIkN2NiZGM5MjctN2FjMS00MGJhLWIxNGEtYTI5NzM2ZjhjZjA3GAAgAigCMI3R7cmGMjj3+++EvjFAjq/tyYYyShxtOUR2NmM4MVZ0Z0l0bXdubGt4a3BmVFAzNTg9WiciJf////8AAAAE3HNFUWFSRVp4ZU5sdGk4UE1DcGhDNVZjL3pQND1ldgcUtxKpAQgaEqQBChxieUd2NElWOVh3VXBDdjBQL3FQc2pzVEI0Y289EiQ2YTFiZjlhMi0zNGI1LTQ2ZDctODZhMC1hYTk3ZGEyYzBkZWQYACACKAIwgdHtyYYyOPfco/mLMUCDr+3JhjJKHEdrclFEdnF1ZUQydlBxaE93R2N1NFFiSEpXND1aICIe/+5WdTdKUXVSeWRSSlozSHJvVHZSQU1MYlFLZTg9ZXvxyCoSpwEIDBKiAQocam9BKzUycFdXc3BHeWtwLzEvakpPcjhyMXNnPRIkODY4NTk0MmYtYjBhNC00MTc3LWJjNjUtZDFkZDYyOGNkN2Y0GAAgAigCMPTQ7cmGMjjQ2aP5izFA/a7tyYYyShxXemJ0UGhLL2s4anF6alNzSXlRWk9NZ091OHc9Wh4iHHkvOWVZcHNNUnp1NTJIUWE0eDh6NytpRlhjcz1l1ZUkZRKvAQgvEqoBChxoajdaU1owM0lRZGc5ekI0NTY5eGQvaGczbUk9EiRjZmI4MmU5NS0xYjBmLTRiZWUtOTMzMy1kOGZiNWMxZTM1ODUYACACKAIw9tDtyYYyOIGGkLmWMUCNr+3JhjJKHDV4OVVQM3MzejFQcEdNQ0FxcjNRN1VEV3NJaz1aJiIk/////wAAAARxVnhxZ2Z6eVdFTmpXOTdFbTJ2RjlCekxXTDA9ZdheVsoSqAEIDxKjAQocS0p4R0tWRzV6MUNVTUJ0NjdwMVBoaVFsZFQwPRIkODYxZDNlNTAtMDJhYy00YmY3LThlNjctMGM5ZjNkZWQ5YTJiGAAgAigCMPLQ7cmGMjiehLi9tTFA/67tyYYyShxFS0dRUisvcWIzU2o3dXk2QVBjdjU5V2FVbmM9Wh8iHeZOVE9rZS9TTURLUUtwbDgwQ0VPcGlzRlpaNmM9ZTj5OTMSqgEIIhKlAQocYXA1NzhSMTJNZitTcXhLY09hMlJuNGRmeHBBPRIkYTZmYTllZTMtYmRmNi00NzIyLWI5NTMtZTAzMmZhNDllN2Q4GAAgAigCMPDQ7cmGMjiY3aP5izFAh6/tyYYyShxhbEF0NS9VaWxxTmZ0QUlxV1pSMGo2SUJFRkE9WiEiH///7TQzZ2p6OTFqdWw5SXRySDNMeGUyL1J4d1VqOD1lOPk5MxKwAQgzEqsBChwyenhoQUdMVFBtdzdiRFp4OFFZSDYxRzJWT0E9EiRhMGM5YThkNy05YzViLTQxODQtYjJmYi04MDQzNjJlMmYyNDgYACAAKAAwk+CoruMxOI7nv/nTMUCO57/50zFKHFhSbWVtamxBK3haeEdrTjFNVWszRjByT0l6VT1aJyIl/////wAAAAT3dUdOUEJCV3IzMWw1VExrOUFldlF4VWR0MW9vPWV3cGyjEqsBCCkSpgEKHGFqeWpnMTVvaEx2Nmxqd3p0QnlVMHV2MDk0az0SJGJhMDE2NGU4LTY0MWUtNDcyZi04MjExLWM2MmEwMzQ4MTc5NxgAIAIoAjDv0O3JhjI4z9uj+YsxQIqv7cmGMkocaVNVTVpPS0RVd2RyWVVRUXVpWjVYcTZDdzUwPVoiIiD////ZR1FwQ2s5dDF4ODROUWc0ZisyNGl1djFCajJrPWU4+TkzEqgBCBASowEKHFBZVUJFQkt6Q2YwQVVVSUswZXBPTWx2T2lvQT0SJDcwZDEyYTM2LWJkOWEtNDk2Yi04NWQ1LWFmNGQyYTU3MDgwMhgAIAIoAjD90O3JhjI4sdyj+YsxQP+u7cmGMkocNExHOUxtMkxSUDRRMHNVN25LcnJVQ0ZUbVVFPVofIh3vVXNQWUVaUFRkZ1JxOU8xY3dWa3VOaGw1SW5VPWU0LMO3EqkBCBgSpAEKHEk2OHJZaXFRYjFwN1U4Vy9rS3NaWGVhMURMcz0SJDliZWQ5OTI2LWNlOWItNDgyMi05YmRmLTZhMjAzODZjZDJlYxgAIAIoAjDu0O3JhjI479uj+YsxQIOv7cmGMkocVXBEd0ljMVZCWHFhZWVPYnB0T3lDS2Rtc09jPVogIh7/ukVCZk5HdUpVL2NIc3haaWZQRWZqRlpsQlVqbz1l6VmK8hKJAQgBEoQBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ1MjVmYTQ2Ni04MmEwLTUyMTMtYjUzMC02MzA3Zjc0YmM1NjAYACAAKAAw6K/Z+IsxOKiy2fiLMUCostn4izFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEokBCAIShAEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJGQyYzU0ZjgzLTQ1YTMtNWI5MC1hY2UxLTA0YTVlY2VjZDA3NxgAIAAoADDpr9n4izE4x7LZ+IsxQMey2fiLMUocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAASqAEIExKjAQocTlVENm9CK05Za3BZZUhTOUlSak1mQmlHekdVPRIkZmE5MDgxNWMtN2M5OS00Njg4LTkyMmEtZDIzMTUxMjIzNTEzGAAgAigCMIrb7cmGMjiK0LetxzFAga/tyYYyShxKN0d2L1J4emFwR3dwKy9BbjVkdjZxNlQweFU9Wh8iHfl3bHB1d2hVcDJQRzdJWW1STFgweWx6cSs3UGc9ZTj5OTMSqgEIIBKlAQocSm9sMUE5cEdUYmRmeDRYVEU1WlI2TkkzdjFzPRIkM2NlYTAxZmYtN2RiNC00YTk1LWJlNmUtYjdlMDZiOTcwZDFlGAAgAigCMIbR7cmGMjjB9KP5izFAhq/tyYYyShxIenEzTHM0ZUFMUE54ZmFQa3BnYmRvNEN3U3M9WiEiH///tytsSkt2aVA1Y2hZeld2T2k1U2F2VkwyeCt2VT1lRdoraxKoAQg3EqMBChxlL2M3KzJiNW9MOFRPSU1zdlJnMDR3eER1amM9EiQ2ZmUwMWM1YS1iYzM2LTRiYTItOTQxNi1jMjFmNmM2ODk3ZjkYACAAKAAwuYr9p+QxOOCM/afkMUDgjP2n5DFKHDlkeWw1dnptbmxlNVA5TmhiK3ZuQlFaNWs4bz1aHyIduW43c2JGeHdWU2cvUE1YM3NEMTN4TTJMTW9Iaz1lKqdJjBKrAQgtEqYBChw1M1pWQUtPRVI3Z0lvenR0cEFhdG1rQ2hxZFk9EiQ4ZTliYzBiZi1kMGU5LTQ1ODMtOWUxMS1lOTg2OGRmYTA2NzYYACACKAIw6dDtyYYyOOSNwsSNMUCMr+3JhjJKHDdFNHovYkZYVWw3eGJqUkNSNE1oQkpkZWdJOD1aIiIg/////VNVeWpKMHFIVlIwSmw2WFJETmJSUC84ZUtQQT1lwKUouhKJAQgDEoQBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiRhOGEwNDY2Ny0wMWRjLTU5N2YtOTRhYy1mOTliMTJjOTIwMjIYACAAKAAw7q/Z+IsxOOaz2fiLMUDms9n4izFKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEqgBCBESowEKHGhYNjFnelBHMDdCdGRyOC9hWTRRY0tobEw0RT0SJDRkYzNlNGUyLTlmZTMtNDQ1Yy04M2ZlLTk4YmRmZTMyMjIyZhgAIAIoAjCK0e3JhjI4ha7n1uQxQICv7cmGMkocV0hzVm5XS2RCV2FSeGtuWW4wa3N6bWZmUDFRPVofIh3zZzVNeUtjZEIyL1Bab2hTbHJJYnNEWmwzV2pvPWU4+TkzEqgBCBcSowEKHDlQNUFWaUUyWU5oL3Y5MVR5RFF3RzJVWjFEZz0SJDMxMTYyZTAxLTZiZjctNDljMy1iYjgzLTNiMzUyOWY4ZjYyYxgAIAIoAjDs0O3JhjI4jdqj+YsxQIKv7cmGMkocTkEreWN6L1pubDVicFFzWDQrTlNEK2lLbU9RPVofIh3/dEMvY3ZFSlk5aE9PdG12TVdxdmkxZTFocmhZPWU4+TkzErABCEQSqwEKHEhQMTNaR0t1T2cxZ0xvVnp4L1dFWW1NdmwyOD0SJDAzNWM3ZWMzLTFmY2MtNGZmZC1iMGFhLWRhNGU4NDkwM2UyMhgAIAAoADD0p6PohjI4qKij6IYyQKioo+iGMkocV2ZSRGovUG5PeFNRYlVJSlV3Z3hUWDFqQjJJPVonIiX/////AAAABf0wWlRJWmIwelJsMGhsWFlWcDZjTDJQNVREUXc9ZcAK7VgSqQEIHhKkAQocQkdxaGNDcndOK3FTT25mM241RHBsVUc2dUNRPRIkMmZkYmY0NzYtNDhmNS00MzkyLWJjNzktM2VmODg1YzllMDJhGAAgAigCMOjQ7cmGMji586P5izFAhK/tyYYyShxzNGZyYnlKeVNZQU44SGNFWVA1SGc5REw3Vmc9WiAiHv/+d3BpVWJ5SFlEVWVJWG5WK0J6OENJaUJrMUlvPWVYk56QErABCDISqwEKHG5JSWQ0MjI0N241UmFVOG9VNWV1TWhRMm1vYz0SJGYwY2Q4MTY4LWYwMDQtNGY0Ny05NTE1LTRhNDAxYmNiMzRlYxgAIAIoAjCF0e3JhjI4y8zxisAxQI6v7cmGMkocR1lPUjIrMHZSYUx6WWl2TnRFYmUwL2thZHVzPVonIiX/////AAAABO5IU1dJOHkyV3pzY2hIc2s2Q0t4cUV1TEswRTA9ZZXOOVUSpwEICxKiAQocSUk5SkNEZDZqRzNDRXBGMnNHbTdZRkdBbjdjPRIkNTcxYTJkNjItYzlkMC00YWNkLWI1ODQtM2MwYmQ2ZWExYmU0GAAgAigCMPHQ7cmGMjjS86P5izFA967tyYYyShxhSVRZclo3bTMwS1djYmw0NDFmUzcrWTVZR009Wh4iHHhQTW9iUExIdU52SndySDdyVjVxUjhiMGxQYz1l+pHe2xKvAQguEqoBChxPKzcwNkVtR2NuQ2ZKMVJBYTlJd2RxTHpYY1k9EiQxYjVlOGZjNC00ODA3LTQ4MWEtODVmOC1jZmRhZjM3ODM0YTIYACACKAIw6tDtyYYyOI+Uwr6QMUCNr+3JhjJKHFBHSDgzMEx2aUV6cFhDSitOOUlVSFhic00yVT1aJiIk/////wAAAARENHUxNHozdHRXOEVrR1UzV0lsdFpyTldlNUk9Zf1KCHUSqQEIGRKkAQocU0U4VzVheWdERExtSFE5RUdRVUxJU3hJMDBnPRIkZDkwZjU2OGUtZTYwYy00NzI2LTg0NTEtZGRkOTRkN2MwNWEyGAAgAigCMPXQ7cmGMjj12KP5izFAg6/tyYYyShxOSmk1dWk5YjZpa1QxVGp6ZTB0am9aZDMvSXM9WiAiHv/dZlQrNThNNHFCVWhkZmhtTkRDZ3cwTUZIcEFFPWV20QkCEqgBCA4SowEKHENRcms0STRiRWJxTmtQcGFycjBPRlJwUmcvbz0SJDBkMTU5MDhlLTk1MDQtNDdmZi05YmVhLTZjNGVmZjg5NmVkOBgAIAIoAjDz0O3JhjI4sdmj+YsxQP6u7cmGMkocaDFJbDdybXpDY21oYXo3NjFvTGFEMHQvNHNRPVofIh3eZTk2RFUrQ0x5TjM4enpQWjdCb05zclNaVE5vPWWaF19DEqoBCCMSpQEKHG9SeEQ0anhNdW1tMlZudTdDZUJIV0hrQ25hST0SJGU1MzMyYWJmLWFjZGYtNDM1My05YzUwLWFkNzZlYWI0YTA3OBgAIAIoAjD60O3JhjI48Nmj+YsxQIiv7cmGMkocZHViMmFkQURSeXNLU1c5dVI1QjNBbHVaL3BRPVohIh////Y2bG1tVHVnWTZmMG9IRjJkbVAxOVowVko2VXM9ZSmXWmowADgA",
+   "version": 1
+}
