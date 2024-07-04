@@ -27,13 +27,25 @@ Widget itemBuilder(BuildContext context, int index) {
   );
 }
 
-Widget notifikasiPelanggaranLists() {
-  return ListTiles(
-    itemCount: controller.items.length,
-    itemBuilder: (context, index) => itemBuilder(context, index),
-    gap: 32,
-    padding: const EdgeInsets.symmetric(
-      horizontal: 7,
-    ),
-  );
+class NotifikasiPelanggaranLists extends StatelessWidget {
+  const NotifikasiPelanggaranLists({super.key, required this.tanggal, required this.jalan, required this.kesalahan, required this.denda});
+
+  final String tanggal;
+  final String jalan;
+  final String kesalahan;
+  final int denda;
+
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTiles(
+      itemCount: controller.items.length,
+      itemBuilder: (context, index) => itemBuilder(context, index),
+      gap: 32,
+      padding: const EdgeInsets.symmetric(
+        horizontal: 7,
+      ),
+    );
+  }
 }
+

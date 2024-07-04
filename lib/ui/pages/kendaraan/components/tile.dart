@@ -7,12 +7,12 @@ class Tile extends StatelessWidget {
       {super.key,
       required this.imgUrl,
       required this.platNomer,
-      required this.nik,
+      required this.cc,
       required this.isVerified});
 
   final String imgUrl;
   final String platNomer;
-  final String nik;
+  final String cc;
   final bool isVerified;
 
   @override
@@ -63,14 +63,14 @@ class Tile extends StatelessWidget {
                   ),
                   Gap(6),
                   Text(
-                    'NIK',
+                    'Volume Langkah (cc)',
                     style: blackTextStyle.copyWith(
                       fontSize: 12,
                       fontWeight: light,
                     ),
                   ),
                   Text(
-                    nik,
+                    "$cc cc",
                     style: blackTextStyle.copyWith(
                       fontSize: 20,
                       fontWeight: light,

@@ -5,6 +5,6 @@ class KendaraanFormItems{
     KendaraanFormClass(label: 'No. Polisi / TKNB'),
     KendaraanFormClass(label: 'No. Rangka'),
     KendaraanFormClass(label: 'No. Mesin'),
-    KendaraanFormClass(label: 'NIK'),
+    KendaraanFormClass(label: 'CC'),
   ];
 }

@@ -1,8 +1,12 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/services/firestore_pelanggaran.dart';
 import 'package:flutter_app/shared/theme.dart';
 
 import 'package:badges/badges.dart' as badges;
 import 'package:gap/gap.dart';
+
+FirestorePelanggaran firestorePelanggaran = FirestorePelanggaran();
 
 PreferredSizeWidget customHomeAppBar(
     {required BuildContext context, required title}) {
@@ -39,12 +43,18 @@ PreferredSizeWidget customHomeAppBar(
           Navigator.pushNamed(context, '/notifikasi');
         },
         child: badges.Badge(
-          badgeContent: Text(
-            '3',
-            style: whiteTextStyle.copyWith(
-              fontWeight: bold,
-              fontSize: 18,
-            ),
+          badgeContent: StreamBuilder<QuerySnapshot>(
+            stream: firestorePelanggaran.getPelanggarans(),
+            builder: (context, snapshot) {
+              List pelanggarans = snapshot.data!.docs;
+              return Text(
+                pelanggarans.length.toString(),
+                style: whiteTextStyle.copyWith(
+                  fontWeight: bold,
+                  fontSize: 18,
+                ),
+              );
+            }
           ),
           badgeAnimation: const badges.BadgeAnimation.slide(),
           badgeStyle: const badges.BadgeStyle(

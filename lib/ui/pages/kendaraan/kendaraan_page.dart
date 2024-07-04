@@ -11,17 +11,6 @@ class KendaraanPage extends StatelessWidget {
     return KendaraanKosong();
   }
 
-  // kalau data kosong
-  // Widget buildContent() {
-  //   return Padding(
-  //     padding: EdgeInsets.symmetric(
-  //       vertical: 20,
-  //       horizontal: defaultMargin,
-  //     ),
-  //     child: const KendaraanKosong(),
-  //   );
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

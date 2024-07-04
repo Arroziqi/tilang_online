@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/models/pages/pelanggaran/pelanggaran_items.dart';
 import 'package:flutter_app/shared/theme.dart';
@@ -8,7 +9,9 @@ import 'package:gap/gap.dart';
 final controller = PelanggaranItems();
 
 class DataPelanggaran extends StatelessWidget {
-  const DataPelanggaran({super.key});
+  const DataPelanggaran({super.key, required this.snapshot});
+
+  final AsyncSnapshot<QuerySnapshot<Object?>> snapshot;
 
   Widget buildDescription() {
     return Padding(
@@ -35,14 +38,29 @@ class DataPelanggaran extends StatelessWidget {
   }
 
   Widget buildListPelanggaran(BuildContext context) {
+    // ambil semua data pelanggaran
+    List pelanggaransList = snapshot.data!.docs;
+
     return ListView.separated(
-      itemCount: controller.items.length,
+      itemCount: pelanggaransList.length,
       itemBuilder: (context, index) {
+
+        // ambil satu pelanggaran
+        DocumentSnapshot documentSnapshot = pelanggaransList[index];
+        String docID = documentSnapshot.id;
+
+        // ambil semua detail data pelanggaran
+        Map<String, dynamic> data = documentSnapshot.data() as Map<String, dynamic>;
+        String tanggal = data['tanggal'];
+        String jalan = data['jalan'];
+        String kesalahan = data['kesalahan'];
+        int denda = int.parse(data['denda']);
+
         return PlatPelanggaran(
           onTap: () {
             // Navigator.pushNamed(context, controller.items[index].route);
           },
-          status: controller.items[index].status,
+          status: "Belum bayar",
           title: controller.items[index].title,
         );
       },

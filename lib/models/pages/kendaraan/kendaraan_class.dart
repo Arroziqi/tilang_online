@@ -1,8 +1,9 @@
 class KendaraanClass {
-  final String imgUrl;
-  final String platNomer;
-  final String nik;
+  final String noPolisi;
+  final String noRangka;
+  final String noMesin;
+  final String cc;
   final bool isVerified;
 
-  KendaraanClass({required this.platNomer, required this.nik, this.isVerified = false, required this.imgUrl});
+  KendaraanClass({required this.noPolisi, required this.noRangka, required this.noMesin,  required this.cc, this.isVerified = false});
 }
