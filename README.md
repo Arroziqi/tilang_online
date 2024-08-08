@@ -1,7 +1,3 @@
-Sure, here's a comprehensive README documentation for your Flutter application that handles online traffic violations, including all the necessary steps to set it up and run it:
-
----
-
 # Online Traffic Violations Handling App
 
 This Flutter application manages traffic violation tickets online. It features notification of traffic violations, fine payments, input forms, authentication, and education. The application uses Firestore from Firebase, Midtrans for the payment gateway, and Node.js for backend API requests.
