@@ -1,10 +1,16 @@
+import 'dart:io';
+
 import 'package:image_picker/image_picker.dart';
 
-pickImage(ImageSource source) async{
-  final ImagePicker _imagePicker = ImagePicker();
-  XFile? _file = await _imagePicker.pickImage(source: source);
-  if(_file != null){
-    return await _file.readAsBytes();
-  }
-  print('No Images Selected');
+String generateOrderId(String id){
+  final timestamp = DateTime.now().millisecondsSinceEpoch.toString();
+  return '$id-$timestamp';
+}
+
+// image picker
+ImagePicker _imagePicker = ImagePicker();
+Future<File?> pickImageFromGallery() async {
+  final XFile? image = await _imagePicker.pickImage(source: ImageSource.gallery);
+
+  return File(image!.path);
 }

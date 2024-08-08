@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/cubit/page_cubit.dart';
 import 'package:flutter_app/ui/pages/edukasi/edukasi_page.dart';
 import 'package:flutter_app/ui/pages/home/home_page.dart';
+import 'package:flutter_app/ui/pages/pelanggaran/pelanggaran_page.dart';
 import 'package:flutter_app/ui/pages/profil/profil_page.dart';
-import 'package:flutter_app/ui/pages/riwayat/riwayat_page.dart';
 import 'package:flutter_app/ui/widgets/bar/bottomNavigationBar/custom_bottom_navigation_bar.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,7 +15,7 @@ class MainPage extends StatelessWidget {
       case 0:
         return const HomePage();
       case 1:
-        return const RiwayatPage();
+        return const PelanggaranPage();
       case 2:
         return const EdukasiPage();
       case 3:

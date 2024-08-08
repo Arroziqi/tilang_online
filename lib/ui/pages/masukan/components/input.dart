@@ -5,24 +5,22 @@ import 'package:flutter_app/ui/widgets/input/input_text.dart';
 import 'package:gap/gap.dart';
 
 class Input extends StatelessWidget {
-  const Input({super.key, required this.label, required this.hintText, required this.type, required this.textController});
+  const Input({super.key, required this.label, required this.hintText, required this.type, this.controller});
 
   final String label;
   final String hintText;
   final String type;
-  // final List<Map?>? selectItems;
+  final TextEditingController? controller;
 
-  // text controller
-  final TextEditingController textController;
 
   Widget getInput(String type, String hintText){
     switch (type){
       case 'longText':
-        return InputText(hintText: hintText, textController: textController,);
+        return InputText(hintText: hintText, controller: controller,);
       case 'select':
-        return InputText(hintText: hintText, textController: textController,);
+        return InputText(hintText: hintText, controller: controller,);
       default:
-        return InputText(hintText: hintText, textController: textController,);
+        return InputText(hintText: hintText, controller: controller,);
     }
   }
 

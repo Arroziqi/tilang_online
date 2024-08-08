@@ -5,14 +5,16 @@ import 'package:gap/gap.dart';
 class Tile extends StatelessWidget {
   const Tile(
       {super.key,
-      required this.imgUrl,
+      this.imgUrl = 'assets/img/kendaraan/ninjazr.jpg',
       required this.platNomer,
-      required this.nik,
-      required this.isVerified});
+      required this.cc,
+      required this.isVerified,
+      this.fotoKendaraan});
 
   final String imgUrl;
   final String platNomer;
-  final String nik;
+  final String cc;
+  final String? fotoKendaraan;
   final bool isVerified;
 
   @override
@@ -22,8 +24,8 @@ class Tile extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: Colors.white,
-          boxShadow: [
-            const BoxShadow(
+          boxShadow: const [
+            BoxShadow(
               color: Colors.black26,
               blurRadius: 5.4,
               spreadRadius: 8,
@@ -40,7 +42,9 @@ class Tile extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 55.5,
-              backgroundImage: AssetImage(imgUrl),
+              backgroundImage: fotoKendaraan == null
+                  ? AssetImage(imgUrl)
+                  : NetworkImage(fotoKendaraan!) as ImageProvider,
             ),
             const Gap(14),
             Expanded(
@@ -61,16 +65,16 @@ class Tile extends StatelessWidget {
                       fontWeight: light,
                     ),
                   ),
-                  Gap(6),
+                  const Gap(6),
                   Text(
-                    'NIK',
+                    'Volume Langkah (cc)',
                     style: blackTextStyle.copyWith(
                       fontSize: 12,
                       fontWeight: light,
                     ),
                   ),
                   Text(
-                    nik,
+                    "$cc cc",
                     style: blackTextStyle.copyWith(
                       fontSize: 20,
                       fontWeight: light,
@@ -85,7 +89,7 @@ class Tile extends StatelessWidget {
       Positioned(
         bottom: 8,
         right: defaultMargin,
-        child: Container(
+        child: SizedBox(
           width: 80,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,7 +101,7 @@ class Tile extends StatelessWidget {
                     : 'assets/img/icons/cycle.png',
                 width: 16,
               ),
-              Gap(7),
+              const Gap(7),
               Text(
                 isVerified ? 'terverifikasi' : 'proses',
                 style: blackTextStyle.copyWith(

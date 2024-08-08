@@ -6,8 +6,8 @@ import 'components/build_app_bar.dart';
 class KendaraanPage extends StatelessWidget {
   const KendaraanPage({super.key});
 
-  Widget buildContent(){
-    return KendaraanKosong();
+  Widget buildContent() {
+    return const KendaraanKosong();
   }
 
   @override

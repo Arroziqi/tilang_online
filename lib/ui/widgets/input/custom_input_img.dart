@@ -15,10 +15,10 @@ class CustomInputImg extends StatelessWidget {
         Expanded(child: ElevatedButton(onPressed: onPressed,
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.symmetric(vertical: defaultMargin),
-            backgroundColor: Color(0xffFFB1B1),
+            backgroundColor: const Color(0xffFFB1B1),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
-              side: BorderSide(
+              side: const BorderSide(
                 color: Colors.red,
               ),
             ),
@@ -28,7 +28,7 @@ class CustomInputImg extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/img/icons/awan.png', width: 40,),
-              Gap(4),
+              const Gap(4),
               Text(text, style: redTextStyle.copyWith(fontSize: 14),),
             ],
           ),

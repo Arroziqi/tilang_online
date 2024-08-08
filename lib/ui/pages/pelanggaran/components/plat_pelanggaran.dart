@@ -7,11 +7,13 @@ class PlatPelanggaran extends StatelessWidget {
     required this.status,
     required this.title,
     required this.onTap,
+    this.color = kThirdColor,
   });
 
   final String status;
   final String title;
   final Function() onTap;
+  final Color color;
 
   Widget buildStatus(String status) {
     return Container(
@@ -20,7 +22,7 @@ class PlatPelanggaran extends StatelessWidget {
         alignment: Alignment.centerRight,
         children: [
           Image.asset(
-            'assets/img/icons/trapesium.png',
+            color == kPrimaryColor ? 'assets/img/icons/trapesium.png' : 'assets/img/icons/trapesium-red.png',
             width: 137,
             height: 31,
           ),
@@ -43,8 +45,8 @@ class PlatPelanggaran extends StatelessWidget {
   Widget buildContent(String title) {
     return ListTile(
       onTap: onTap,
-      tileColor: kPrimaryColor,
-      contentPadding: const EdgeInsets.symmetric(vertical: 14),
+      tileColor: color,
+      contentPadding: const EdgeInsets.symmetric(vertical: 5, horizontal: 14),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9)),
       title: Text(
         title,
@@ -52,7 +54,7 @@ class PlatPelanggaran extends StatelessWidget {
           fontSize: 16,
           fontWeight: medium,
         ),
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.start,
       ),
     );
   }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InputSelect extends StatefulWidget {
-  const InputSelect({super.key, required this.hintText, required this.selectItems});
+  const InputSelect(
+      {super.key, required this.hintText, required this.selectItems});
 
   final String hintText;
   final selectItems;
@@ -11,7 +12,6 @@ class InputSelect extends StatefulWidget {
 }
 
 class _InputSelectState extends State<InputSelect> {
-
   late List<Map> selectItems;
 
   @override
@@ -20,7 +20,7 @@ class _InputSelectState extends State<InputSelect> {
     selectItems = widget.selectItems; // Inisialisasi berdasarkan parameter
   }
 
-  var _value = 'tampilan';
+  final _value = 'tampilan';
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField(
@@ -28,10 +28,10 @@ class _InputSelectState extends State<InputSelect> {
       items: widget.selectItems
           .map(
             (selectItem) => DropdownMenuItem(
+              value: selectItem['value'],
               child: Text(
                 selectItem['text'],
               ),
-              value: selectItem['value'],
             ),
           )
           .toList(),

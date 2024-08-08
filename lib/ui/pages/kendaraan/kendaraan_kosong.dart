@@ -15,7 +15,10 @@ class KendaraanKosong extends StatelessWidget {
             text: 'Data Kendaraan Masih \n Kosong',
           ),
         ),
-        Button(onPressed: ()=>Navigator.pushNamed(context, '/kendaraan/form'), text: 'Tambah',),
+        Button(
+          onPressed: () => Navigator.pushNamed(context, '/kendaraan/form'),
+          text: 'Tambah',
+        ),
       ],
     );
   }

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/widgets/response_page/success/success_page.dart';
@@ -16,7 +15,7 @@ class MasukanSuccess extends StatelessWidget {
   Widget buildContent(BuildContext context) {
     return Column(
       children: [
-        Expanded(
+        const Expanded(
           child: SuccessPage(
             text: 'Masukan telah\nkami Rekam',
           ),
@@ -34,9 +33,17 @@ class MasukanSuccess extends StatelessWidget {
                     Navigator.pushNamed(context, '/home');
                   },
                   style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(vertical: 10,),
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 10,
+                    ),
                   ),
-                  child: Text('Kembali ke halaman Utama', style: whiteTextStyle.copyWith(fontWeight: semiBold, fontSize: 20,),),
+                  child: Text(
+                    'Kembali ke halaman Utama',
+                    style: whiteTextStyle.copyWith(
+                      fontWeight: semiBold,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
               ),
             ),
