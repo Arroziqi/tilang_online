@@ -26,6 +26,27 @@ This Flutter application manages traffic violation tickets online. It features n
 - Firebase Project: [Setup Firebase](https://firebase.google.com/)
 - Midtrans Account: [Register](https://midtrans.com/)
 
+"If you only want to run the frontend, then you just need to follow the frontend setup steps and don't need to configure Midtrans and Firebase."
+
+### Frontend Setup
+
+1. Clone the frontend repository:
+   ```bash
+   git clone -b frontend git@github.com:Arroziqi/tilang_online.git frontend
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd frontend
+   ```
+3. Install the dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
 ### Setup Firebase
 
 1. Create a new Firebase project in the Firebase Console.
@@ -70,50 +91,7 @@ create a simple request API with node.js or other languages. Follow the document
    npm start
    ```
 -->
-### Frontend Setup
 
-1. Clone the frontend repository:
-   ```bash
-   git clone git@github.com:Arroziqi/tilang_online.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd <your-frontend-repo-directory>
-   ```
-3. Install the dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Set up your Firebase configuration in `lib/firebase_options.dart`:
-   ```dart
-   // Example
-   import 'package:firebase_core/firebase_core.dart';
-   import 'package:your_app/firebase_options.dart';
-
-   void main() async {
-     WidgetsFlutterBinding.ensureInitialized();
-     await Firebase.initializeApp(
-       options: DefaultFirebaseOptions.currentPlatform,
-     );
-     runApp(MyApp());
-   }
-   ```
-5. Configure Midtrans in your Flutter app:
-   ```dart
-   import 'package:midtrans_sdk/midtrans_sdk.dart';
-
-   void initMidtrans() {
-     MidtransSDK midtrans = MidtransSDK(
-       clientKey: '<your-midtrans-client-key>',
-       merchantBaseUrl: '<your-backend-url>',
-     );
-     midtrans.initialize();
-   }
-   ```
-6. Run the app:
-   ```bash
-   flutter run
-   ```
 <!--
 ## Usage
 
