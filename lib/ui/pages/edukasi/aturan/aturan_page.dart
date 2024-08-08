@@ -26,7 +26,7 @@ class AturanPage extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Column(
+          const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextBlackM20(text: 'Cari Peraturan Perundang-undangan'),
@@ -46,7 +46,7 @@ class AturanPage extends StatelessWidget {
                     controller.items[index].title,
                   ),
                   contentPadding:
-                      EdgeInsets.symmetric(horizontal: 17, vertical: 12),
+                      const EdgeInsets.symmetric(horizontal: 17, vertical: 12),
                   tileColor: kPrimaryColor,
                   textColor: Colors.white,
                   shape: RoundedRectangleBorder(

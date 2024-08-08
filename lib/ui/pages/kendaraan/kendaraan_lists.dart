@@ -26,7 +26,7 @@ class KendaraanLists extends StatelessWidget {
             platNomer: controller.items[index].platNomer,
             nik: controller.items[index].nik,
             isVerified: controller.items[index].isVerified),
-        separatorBuilder: (context, index)=>Gap(31),
+        separatorBuilder: (context, index)=>const Gap(31),
       ),
     );
   }

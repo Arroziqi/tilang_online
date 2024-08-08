@@ -10,12 +10,12 @@ class ButtonReadmore extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+        backgroundColor: kPrimaryColor,
+      ),
       child: Text(
         'Read More',
         style: whiteTextStyle,
-      ),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: kPrimaryColor,
       ),
     );
   }

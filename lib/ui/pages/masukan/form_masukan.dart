@@ -11,7 +11,7 @@ class FormMasukan extends StatelessWidget {
 
   Widget buildForm() {
     return ListView.separated(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       itemCount: controller.items.length,
       itemBuilder: (context, index) => Input(
         label: controller.items[index].label,
@@ -31,7 +31,7 @@ class FormMasukan extends StatelessWidget {
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: kPrimaryColor,
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 80),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 80),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(9),
         ),

@@ -31,7 +31,7 @@ class _TutorialPageState extends State<TutorialPage> {
         horizontal: defaultMargin,
       ),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10), color: Color(0xffE5E8F3)),
+          borderRadius: BorderRadius.circular(10), color: const Color(0xffE5E8F3)),
       child: ListView.separated(
         itemCount: controller.items.length,
         itemBuilder: (context, index) => Column(
@@ -39,7 +39,7 @@ class _TutorialPageState extends State<TutorialPage> {
           children: [
             Gap(defaultMargin),
             TextBlackM20(text: controller.items[index].title),
-            Gap(11),
+            const Gap(11),
             Image.asset(
               controller.items[index].imgUrl,
             ),
@@ -51,7 +51,7 @@ class _TutorialPageState extends State<TutorialPage> {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            Gap(12),
+            const Gap(12),
             Row(mainAxisAlignment: MainAxisAlignment.end, children: [
               ButtonReadmore(
                 onPressed: () {
@@ -67,7 +67,7 @@ class _TutorialPageState extends State<TutorialPage> {
           ],
         ),
         shrinkWrap: true,
-        separatorBuilder: (BuildContext context, int index) => Gap(25),
+        separatorBuilder: (BuildContext context, int index) => const Gap(25),
       ),
     );
   }
@@ -83,20 +83,20 @@ class _TutorialPageState extends State<TutorialPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 17,
               right: 17,
             ),
             child: Column(
               children: [
-                TextBlackM20(
+                const TextBlackM20(
                   text: 'Cari tutorial lalu lintas',
                 ), //   todo: atur style text nya di lib/ui/widgets/text/black_m_20.dart atau dengan klik [TextBlackM20] sambil menahan tombol CTRL
-                Gap(12),
-                SearchColumn(
+                const Gap(12),
+                const SearchColumn(
                     text:
                         'text'), // todo: sesuaikan [text]nya lalu styling [SearchColumn]
-                Gap(27),
+                const Gap(27),
                 contentProvider(),
               ],
             ),

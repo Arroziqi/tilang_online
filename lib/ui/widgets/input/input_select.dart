@@ -20,7 +20,7 @@ class _InputSelectState extends State<InputSelect> {
     selectItems = widget.selectItems; // Inisialisasi berdasarkan parameter
   }
 
-  var _value = 'tampilan';
+  // final _value = 'tampilan';
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField(
@@ -28,10 +28,10 @@ class _InputSelectState extends State<InputSelect> {
       items: widget.selectItems
           .map(
             (selectItem) => DropdownMenuItem(
+              value: selectItem['value'],
               child: Text(
                 selectItem['text'],
               ),
-              value: selectItem['value'],
             ),
           )
           .toList(),

@@ -17,7 +17,7 @@ class _SearchColumnState extends State<SearchColumn> {
       builder: (BuildContext context, SearchController controller) => SearchBar(
         // todo: atur padding dan style lainnya biar sesuai dengan yang ada di desain figma,
         hintText: widget.text,
-        trailing: <Widget>[
+        trailing: const <Widget>[
           Icon(Icons.search),
         ],
         textStyle: WidgetStatePropertyAll(

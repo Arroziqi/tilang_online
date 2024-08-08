@@ -15,7 +15,7 @@ class TutorialSingle extends StatelessWidget {
       padding: EdgeInsets.only(
           left: defaultMargin, right: defaultMargin, top: 2 * defaultMargin),
       // todo: sesuaikan [child]-nya
-      child: Text('isi konten'),
+      child: const Text('isi konten'),
     );
   }
 

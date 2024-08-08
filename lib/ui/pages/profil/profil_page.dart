@@ -23,7 +23,7 @@ class ProfilPage extends StatelessWidget {
       title: Text(
         controller.items[index].title,
       ),
-      trailing: Icon(Icons.arrow_forward_ios),
+      trailing: const Icon(Icons.arrow_forward_ios),
     );
   }
 
@@ -44,10 +44,10 @@ class ProfilPage extends StatelessWidget {
               fontWeight: semiBold,
             ),
           ),
-          Gap(41),
+          const Gap(41),
           ListView.separated(
             itemBuilder: (context, index) => itemBuilder(context, index),
-            separatorBuilder: (context, index) => Divider(
+            separatorBuilder: (context, index) => const Divider(
               thickness: 1.5,
             ),
             itemCount: controller.items.length,
