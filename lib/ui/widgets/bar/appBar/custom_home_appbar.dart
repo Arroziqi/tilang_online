@@ -42,39 +42,53 @@ PreferredSizeWidget customHomeAppBar(
         onTap: () {
           Navigator.pushNamed(context, '/notifikasi');
         },
-        child: badges.Badge(
-          badgeContent: StreamBuilder<QuerySnapshot>(
+        child: StreamBuilder<QuerySnapshot>(
             stream: firestorePelanggaran.getPelanggarans(),
             builder: (context, snapshot) {
-              List pelanggarans = snapshot.data!.docs;
-              return Text(
-                pelanggarans.length.toString(),
-                style: whiteTextStyle.copyWith(
-                  fontWeight: bold,
-                  fontSize: 18,
-                ),
-              );
-            }
-          ),
-          badgeAnimation: const badges.BadgeAnimation.slide(),
-          badgeStyle: const badges.BadgeStyle(
-            badgeColor: kBackgroundColor,
-            borderSide: BorderSide(
-              width: 4,
-              color: Colors.white,
-            ),
-            padding: EdgeInsets.all(10),
-          ),
-          child: const Icon(
-            Icons.notifications_none,
-            size: 46,
-            color: Colors.white,
-          ),
-        ),
+
+              if(snapshot.hasData){
+                List pelanggarans = snapshot.data!.docs;
+                return badges.Badge(
+                  badgeContent: Text(
+                    pelanggarans.length.toString(),
+                    style: whiteTextStyle.copyWith(
+                      fontWeight: bold,
+                      fontSize: 18,
+                      color: pelanggarans.isNotEmpty ? Colors.white : Colors.transparent,
+                    ),
+                  ),
+                  badgeAnimation: const badges.BadgeAnimation.slide(),
+                  badgeStyle: badges.BadgeStyle(
+                    badgeColor: pelanggarans.isNotEmpty ? kBackgroundColor : Colors.transparent,
+                    borderSide: BorderSide(
+                      width: 4,
+                      color: pelanggarans.isNotEmpty ? Colors.white : Colors.transparent,
+                    ),
+                    padding: const EdgeInsets.all(10),
+                  ),
+                  child: const Icon(
+                    Icons.notifications_none,
+                    size: 46,
+                    color: Colors.white,
+                  ),
+                );
+              }else{
+                return const badges.Badge(
+                  badgeAnimation: badges.BadgeAnimation.slide(),
+                  child: Icon(
+                    Icons.notifications_none,
+                    size: 46,
+                    color: Colors.white,
+                  ),
+                );
+              }
+
+
+            }),
       ),
       const Gap(24),
     ],
-    leadingWidth: 268,
+    leadingWidth: 300,
     toolbarHeight: 105,
   );
 }

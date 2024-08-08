@@ -12,10 +12,9 @@ class NotifikasiTileItems extends TileClass {
   factory NotifikasiTileItems.fromFirestore(DocumentSnapshot doc) {
     Map data = doc.data() as Map;
     return NotifikasiTileItems(
-        title: "Anda terkena tilang pada tanggal " +
-            data['tanggal'] +
-            " pada Jln. " +
-            data['jalan'],
+        title:
+            "${"Anda terkena tilang pada tanggal " + data['tanggal']} pada Jln. " +
+                data['jalan'],
         imageUrl: 'assets/img/features/feature1.png');
   }
 }

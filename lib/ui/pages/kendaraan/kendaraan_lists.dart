@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/models/pages/kendaraan/kendaraan_items.dart';
 import 'package:flutter_app/services/firestore_kendaraan.dart';
-import 'package:flutter_app/services/firestore_pelanggaran.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/kendaraan/components/tile.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_kosong.dart';
@@ -39,25 +37,25 @@ class KendaraanLists extends StatelessWidget {
                 itemBuilder: (context, index) {
                   // ambil satu kendaraan
                   DocumentSnapshot documentSnapshot = kendaraans[index];
-                  String docID = documentSnapshot.id;
 
                   // ambil detail informasi dari tiap kendaraan
                   Map<String, dynamic> data =
                       documentSnapshot.data() as Map<String, dynamic>;
                   String platNomer = data['no_polisi'];
                   String cc = data['cc'];
+                  String? fotoKendaraan = data['foto_kendaraan'];
                   bool isVerified = data['isVerified'];
                   return Tile(
-                    imgUrl: 'assets/img/kendaraan/motor1.png',
+                    fotoKendaraan: fotoKendaraan,
                     platNomer: platNomer,
                     isVerified: isVerified,
                     cc: cc,
                   );
                 },
-                separatorBuilder: (context, index) => Gap(31),
+                separatorBuilder: (context, index) => const Gap(31),
               );
             } else {
-              return KendaraanKosong();
+              return const KendaraanKosong();
             }
           }),
     );

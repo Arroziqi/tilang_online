@@ -20,7 +20,7 @@ class NotifikasiPage extends StatelessWidget {
         vertical: 20,
         horizontal: defaultMargin,
       ),
-      child: NotifikasiLists(),
+      child: const NotifikasiLists(),
     );
   }
 

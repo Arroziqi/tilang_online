@@ -1,12 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/models/pages/pelanggaran/pelanggaran_items.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/components/plat_pelanggaran.dart';
 import 'package:flutter_app/ui/widgets/text/note.dart';
 import 'package:gap/gap.dart';
 
-final controller = PelanggaranItems();
+import '../notifikasi/pelanggaran/notifikasi_pelanggaran_view.dart';
 
 class DataPelanggaran extends StatelessWidget {
   const DataPelanggaran({super.key, required this.snapshot});
@@ -44,24 +43,38 @@ class DataPelanggaran extends StatelessWidget {
     return ListView.separated(
       itemCount: pelanggaransList.length,
       itemBuilder: (context, index) {
-
         // ambil satu pelanggaran
         DocumentSnapshot documentSnapshot = pelanggaransList[index];
         String docID = documentSnapshot.id;
 
         // ambil semua detail data pelanggaran
-        Map<String, dynamic> data = documentSnapshot.data() as Map<String, dynamic>;
+        Map<String, dynamic> data =
+            documentSnapshot.data() as Map<String, dynamic>;
         String tanggal = data['tanggal'];
         String jalan = data['jalan'];
         String kesalahan = data['kesalahan'];
         int denda = int.parse(data['denda']);
+        bool status = data['selesei'];
 
         return PlatPelanggaran(
           onTap: () {
-            // Navigator.pushNamed(context, controller.items[index].route);
+            if (status == false) {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => NotifikasiPelanggaranView(
+                            tanggal: tanggal,
+                            jalan: jalan,
+                            kesalahan: kesalahan,
+                            denda: denda,
+                            id: docID,
+                          )));
+            }
           },
-          status: "Belum bayar",
-          title: controller.items[index].title,
+          status: status == false ? "Belum bayar" : "Selesei",
+          title:
+              "Pelanggaran $kesalahan di Jl. $jalan pada tanggal $tanggal dan dikenai denda sebesar RP.$denda",
+          color: status == false ? kThirdColor : kPrimaryColor,
         );
       },
       separatorBuilder: (context, index) => const Gap(29),

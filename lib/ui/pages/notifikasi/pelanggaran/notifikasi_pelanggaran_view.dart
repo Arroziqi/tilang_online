@@ -6,7 +6,6 @@ import 'package:flutter_app/services/firestore_pelanggaran.dart';
 import 'package:flutter_app/services/utils.dart';
 import 'package:flutter_app/ui/widgets/bar/appBar/custom_back_navigation_appbar.dart';
 import 'package:flutter_app/ui/widgets/button/button_primary.dart';
-import 'package:flutter_app/ui/widgets/response_page/success/success_payment_page.dart';
 import 'package:gap/gap.dart';
 import 'package:http/http.dart' as http;
 import 'package:webview_flutter/webview_flutter.dart';

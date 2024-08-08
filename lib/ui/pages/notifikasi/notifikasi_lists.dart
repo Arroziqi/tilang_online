@@ -22,45 +22,48 @@ class NotifikasiLists extends StatelessWidget {
         if (snapshot.hasData) {
           List pelanggaransList = snapshot.data!.docs;
 
-          // tampilkan sebagai list
-          return ListView.separated(
-            itemBuilder: (context, index) {
-              // ambil tiap document
-              DocumentSnapshot documentSnapshot = pelanggaransList[index];
-              String docID = documentSnapshot.id;
+          if (pelanggaransList.isEmpty) {
+            return const Text('No Notifications found!');
+          } else {
+            // tampilkan sebagai list
+            return ListView.separated(
+              itemBuilder: (context, index) {
+                // ambil tiap document
+                DocumentSnapshot documentSnapshot = pelanggaransList[index];
+                String docID = documentSnapshot.id;
 
-              // ambil data dari setiap document
-              Map<String, dynamic> data =
-                  documentSnapshot.data() as Map<String, dynamic>;
-              String tanggal = data['tanggal'];
-              String jalan = data['jalan'];
-              String kesalahan = data['kesalahan'];
-              int denda = int.parse(data['denda']);
+                // ambil data dari setiap document
+                Map<String, dynamic> data =
+                    documentSnapshot.data() as Map<String, dynamic>;
+                String tanggal = data['tanggal'];
+                String jalan = data['jalan'];
+                String kesalahan = data['kesalahan'];
+                int denda = int.parse(data['denda']);
 
-              // tampilkan dalam list tile
-              return CustomListTileRed(
-                title: "Anda terkena tilang pada tanggal " +
-                    tanggal +
-                    " di Jln. " +
-                    jalan,
-                imageUrl: 'assets/img/features/feature1.png',
-                onTap: () {
-                  Navigator.push(
-                      (context),
-                      MaterialPageRoute(
-                          builder: (context) => NotifikasiPelanggaran(
-                                tanggal: tanggal,
-                                jalan: jalan,
-                                kesalahan: kesalahan,
-                                denda: denda, id: docID,
-                              )));
-                },
-              );
-            },
-            itemCount: pelanggaransList.length,
-            separatorBuilder: (BuildContext context, int index) =>
-                const Gap(22),
-          );
+                // tampilkan dalam list tile
+                return CustomListTileRed(
+                  title:
+                      "Anda terkena tilang pada tanggal $tanggal di Jln. $jalan",
+                  imageUrl: 'assets/img/features/feature1.png',
+                  onTap: () {
+                    Navigator.push(
+                        (context),
+                        MaterialPageRoute(
+                            builder: (context) => NotifikasiPelanggaran(
+                                  tanggal: tanggal,
+                                  jalan: jalan,
+                                  kesalahan: kesalahan,
+                                  denda: denda,
+                                  id: docID,
+                                )));
+                  },
+                );
+              },
+              itemCount: pelanggaransList.length,
+              separatorBuilder: (BuildContext context, int index) =>
+                  const Gap(22),
+            );
+          }
         } else {
           return const Text('No Notifications found!');
         }

@@ -1,7 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/services/firestore_pelanggaran.dart';
-import 'package:flutter_app/ui/pages/notifikasi/notifikasi_lists.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/data_pelanggaran.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/data_pelanggaran_kosong.dart';
 import 'package:flutter_app/ui/widgets/bar/appBar/custom_back_navigation_appbar.dart';
@@ -9,7 +7,7 @@ import 'package:flutter_app/ui/widgets/bar/appBar/custom_back_navigation_appbar.
 FirestorePelanggaran firestorePelanggaran = FirestorePelanggaran();
 
 class PelanggaranPage extends StatefulWidget {
-  PelanggaranPage({super.key});
+  const PelanggaranPage({super.key});
 
   @override
   State<PelanggaranPage> createState() => _PelanggaranPageState();
@@ -24,20 +22,36 @@ class _PelanggaranPageState extends State<PelanggaranPage> {
   Widget buildContent() {
     return TabBarView(
       children: <Widget>[
-        StreamBuilder(stream: firestorePelanggaran.getPelanggarans(), builder: (context, snapshot){
-          if(snapshot.hasData){
-            return DataPelanggaran(snapshot: snapshot,);
-          }else{
-            return DataPelanggaranKosong();
-          }
-        }),
-        StreamBuilder(stream: firestorePelanggaran.getRiwayatPelanggarans(), builder: (context, snapshot){
-          if(snapshot.hasData){
-            return DataPelanggaran(snapshot: snapshot,);
-          }else{
-            return DataPelanggaranKosong();
-          }
-        }),
+        StreamBuilder(
+            stream: firestorePelanggaran.getPelanggarans(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                if (snapshot.data!.docs.isNotEmpty) {
+                  return DataPelanggaran(
+                    snapshot: snapshot,
+                  );
+                } else {
+                  return const DataPelanggaranKosong();
+                }
+              } else {
+                return const DataPelanggaranKosong();
+              }
+            }),
+        StreamBuilder(
+            stream: firestorePelanggaran.getRiwayatPelanggarans(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                if (snapshot.data!.docs.isNotEmpty) {
+                  return DataPelanggaran(
+                    snapshot: snapshot,
+                  );
+                } else {
+                  return const DataPelanggaranKosong();
+                }
+              } else {
+                return const DataPelanggaranKosong();
+              }
+            }),
       ],
     );
   }

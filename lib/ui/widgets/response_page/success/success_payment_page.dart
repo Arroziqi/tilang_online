@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:gap/gap.dart';
@@ -31,17 +30,18 @@ class SuccessPaymentPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  TextButton(onPressed: () {}, child: Icon(Icons.close)),
+                  TextButton(onPressed: () {}, child: const Icon(Icons.close)),
                   TextButton(
-                      onPressed: () {}, child: Icon(Icons.ios_share_outlined))
+                      onPressed: () {},
+                      child: const Icon(Icons.ios_share_outlined))
                 ],
               ),
-              Gap(29),
+              const Gap(29),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(24)),
-                padding: EdgeInsets.all(24),
+                padding: const EdgeInsets.all(24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -50,23 +50,23 @@ class SuccessPaymentPage extends StatelessWidget {
                       width: 56,
                       height: 56,
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Text(
                       'Payment Success!',
                       style: blackTextStyle.copyWith(
                           fontWeight: regular, fontSize: 16),
                     ),
-                    Gap(8),
+                    const Gap(8),
                     Text(
                       'IDR $denda',
                       style: blackTextStyle.copyWith(
                           fontWeight: semiBold, fontSize: 24),
                     ),
-                    Gap(32),
-                    Divider(
+                    const Gap(32),
+                    const Divider(
                       color: Colors.grey,
                     ),
-                    Gap(32),
+                    const Gap(32),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -74,12 +74,12 @@ class SuccessPaymentPage extends StatelessWidget {
                           'Ref Number',
                           style: greyTextStyle.copyWith(fontSize: 13),
                         ),
-                        Text('$refNumber',
+                        Text(refNumber,
                             style: blackTextStyle.copyWith(
                                 fontSize: 13, fontWeight: medium)),
                       ],
                     ),
-                    Gap(14),
+                    const Gap(14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -92,7 +92,7 @@ class SuccessPaymentPage extends StatelessWidget {
                                 fontSize: 13, fontWeight: medium)),
                       ],
                     ),
-                    Gap(14),
+                    const Gap(14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -105,7 +105,7 @@ class SuccessPaymentPage extends StatelessWidget {
                                 fontSize: 13, fontWeight: medium)),
                       ],
                     ),
-                    Gap(14),
+                    const Gap(14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -118,12 +118,12 @@ class SuccessPaymentPage extends StatelessWidget {
                                 fontSize: 13, fontWeight: medium)),
                       ],
                     ),
-                    Gap(14),
-                    Divider(
+                    const Gap(14),
+                    const Divider(
                       color: Colors.grey,
                     ),
-                    Gap(14),
-                    Gap(14),
+                    const Gap(14),
+                    const Gap(14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -136,7 +136,7 @@ class SuccessPaymentPage extends StatelessWidget {
                                 fontSize: 13, fontWeight: medium)),
                       ],
                     ),
-                    Gap(14),
+                    const Gap(14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -156,7 +156,7 @@ class SuccessPaymentPage extends StatelessWidget {
               )
             ],
           ),
-          Column(
+          const Column(
             children: [],
           )
         ],
@@ -168,7 +168,7 @@ class SuccessPaymentPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Color(0xff707070),
+      backgroundColor: const Color(0xff707070),
       body: buildContent(context),
     ));
   }
