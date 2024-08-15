@@ -9,6 +9,8 @@ class AppTheme {
         seedColor: kBackgroundColor,
       ),
 
+      scaffoldBackgroundColor: Colors.white,
+
       // mengatur default text style
       textTheme: TextTheme(
         // untuk title page di bagian topbar

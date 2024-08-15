@@ -8,7 +8,7 @@ Widget note() {
       Container(
         width: double.infinity,
         color: Colors.white,
-        padding: EdgeInsets.symmetric(vertical: defaultMargin),
+        padding: EdgeInsets.only(top: 10, bottom: defaultMargin),
         child: Text(
           'Note: Lakukan Pembayaran Selama 2 x 24 Jam atau STNK\nAnda akan kami blokir',
           style: blackTextStyle.copyWith(

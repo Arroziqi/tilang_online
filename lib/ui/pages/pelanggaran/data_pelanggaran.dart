@@ -13,8 +13,15 @@ class DataPelanggaran extends StatelessWidget {
   final AsyncSnapshot<QuerySnapshot<Object?>> snapshot;
 
   Widget buildDescription() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 32),
+    return Container(
+      padding: EdgeInsets.only(
+        left: defaultMargin,
+        right: defaultMargin,
+        top: 15,
+        bottom: 12,
+      ),
+      width: double.infinity,
+      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -40,46 +47,47 @@ class DataPelanggaran extends StatelessWidget {
     // ambil semua data pelanggaran
     List pelanggaransList = snapshot.data!.docs;
 
-    return ListView.separated(
-      itemCount: pelanggaransList.length,
-      itemBuilder: (context, index) {
-        // ambil satu pelanggaran
-        DocumentSnapshot documentSnapshot = pelanggaransList[index];
-        String docID = documentSnapshot.id;
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+      child: ListView.separated(
+        itemCount: pelanggaransList.length,
+        itemBuilder: (context, index) {
+          // ambil satu pelanggaran
+          DocumentSnapshot documentSnapshot = pelanggaransList[index];
+          String docID = documentSnapshot.id;
 
-        // ambil semua detail data pelanggaran
-        Map<String, dynamic> data =
-            documentSnapshot.data() as Map<String, dynamic>;
-        String tanggal = data['tanggal'];
-        String jalan = data['jalan'];
-        String kesalahan = data['kesalahan'];
-        int denda = int.parse(data['denda']);
-        bool status = data['selesei'];
+          // ambil semua detail data pelanggaran
+          Map<String, dynamic> data =
+              documentSnapshot.data() as Map<String, dynamic>;
+          String tanggal = data['tanggal'];
+          String jalan = data['jalan'];
+          String kesalahan = data['kesalahan'];
+          int denda = int.parse(data['denda']);
+          bool status = data['selesei'];
 
-        return PlatPelanggaran(
-          onTap: () {
-            if (status == false) {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => NotifikasiPelanggaranView(
-                            tanggal: tanggal,
-                            jalan: jalan,
-                            kesalahan: kesalahan,
-                            denda: denda,
-                            id: docID,
-                          )));
-            }
-          },
-          status: status == false ? "Belum bayar" : "Selesei",
-          title:
-              "Pelanggaran $kesalahan di Jl. $jalan pada tanggal $tanggal dan dikenai denda sebesar RP.$denda",
-          color: status == false ? kThirdColor : kPrimaryColor,
-        );
-      },
-      separatorBuilder: (context, index) => const Gap(29),
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+          return PlatPelanggaran(
+            onTap: () {
+              if (status == false) {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => NotifikasiPelanggaranView(
+                              tanggal: tanggal,
+                              jalan: jalan,
+                              kesalahan: kesalahan,
+                              denda: denda,
+                              id: docID,
+                            )));
+              }
+            },
+            status: status == false ? "Belum bayar" : "Selesei",
+            title:
+                "Pelanggaran $kesalahan di Jl. $jalan pada tanggal $tanggal dan dikenai denda sebesar RP.$denda",
+            color: status == false ? kThirdColor : kPrimaryColor,
+          );
+        },
+        separatorBuilder: (context, index) => const Gap(29),
+      ),
     );
   }
 
@@ -89,26 +97,16 @@ class DataPelanggaran extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        top: 10,
-        left: defaultMargin,
-        right: defaultMargin,
-      ),
-      child: Column(
-        children: [
-          Expanded(
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                buildDescription(),
-                buildListPelanggaran(context),
-              ],
-            ),
-          ),
-          buildNote(),
-        ],
-      ),
+    return Column(
+      children: [
+        buildDescription(),
+        const Gap(10),
+        Expanded(
+          child: buildListPelanggaran(context),
+        ),
+        Gap(defaultMargin),
+        buildNote(),
+      ],
     );
   }
 }
