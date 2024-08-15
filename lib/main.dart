@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ui/pages/edukasi/aturan/aturan_page.dart';
+import 'package:flutter_app/ui/pages/edukasi/tutorial/tutorial_page.dart';
 import 'package:flutter_app/firebase_options.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_form.dart';
 import 'package:flutter_app/ui/pages/kendaraan/kendaraan_lists.dart';
@@ -8,6 +10,7 @@ import 'package:flutter_app/ui/pages/masukan/masukan_success.dart';
 import 'package:flutter_app/ui/pages/media_sosial/media_sosial_page.dart';
 import 'package:flutter_app/ui/pages/notifikasi/notifikasi_page.dart';
 import 'package:flutter_app/ui/pages/pelanggaran/pelanggaran_page.dart';
+import 'package:flutter_app/ui/pages/profil/data_pengemudi/data_pengemudi.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_app/cubit/page_cubit.dart';
@@ -57,6 +60,9 @@ class MyApp extends StatelessWidget {
           '/kendaraan': (context) => const KendaraanLists(),
           '/kendaraan/form': (context) => const KendaraanForm(),
           '/medsos': (context) => const MediaSosialPage(),
+          '/profile/data-pengemudi': (context) => const DataPengemudi(),
+          '/edukasi/tutorial': (context) => const TutorialPage(),
+          '/edukasi/aturan': (context) => const AturanPage(),
         },
       ),
     );
