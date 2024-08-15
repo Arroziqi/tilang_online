@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../models/pages/home/feature_tile_items.dart';
 import '../../widgets/list/list_tiles.dart';
@@ -25,7 +26,11 @@ Widget featureLists() {
               Navigator.pushNamed(context, '/kendaraan');
               break;
             case 3:
-              Navigator.pushNamed(context, '/medsos');
+              if(controller.items[index].url != null){
+                launchUrl(Uri.parse(controller.items[index].url!));
+              }else{
+                Navigator.pushNamed(context, '/medsos');
+              }
               break;
             default:
               Navigator.pushNamed(context, '/kendaraan');

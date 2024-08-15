@@ -5,7 +5,9 @@ import '../../../shared/theme.dart';
 Widget note() {
   return Column(
     children: [
-      Padding(
+      Container(
+        width: double.infinity,
+        color: Colors.white,
         padding: EdgeInsets.symmetric(vertical: defaultMargin),
         child: Text(
           'Note: Lakukan Pembayaran Selama 2 x 24 Jam atau STNK\nAnda akan kami blokir',

@@ -79,6 +79,7 @@ class DataPelanggaran extends StatelessWidget {
       },
       separatorBuilder: (context, index) => const Gap(29),
       shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
     );
   }
 

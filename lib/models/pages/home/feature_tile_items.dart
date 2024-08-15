@@ -18,6 +18,7 @@ class FeatureTileItems {
     FeatureTileClass(
         title: 'Media Sosial',
         description: 'Ikuti info terbaru dari Korlantas',
-        imageUrl: 'assets/img/features/feature4.png')
+        imageUrl: 'assets/img/features/feature4.png',
+        url: "https://www.digitalkorlantas.id/"),
   ];
 }

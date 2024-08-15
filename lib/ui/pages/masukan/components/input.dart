@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/shared/theme.dart';
 // import 'package:flutter_app/ui/widgets/input/input_select.dart';
 import 'package:flutter_app/ui/widgets/input/input_text.dart';
+import 'package:flutter_app/ui/widgets/input/input_text_area.dart';
 import 'package:gap/gap.dart';
 
 class Input extends StatelessWidget {
@@ -16,7 +17,7 @@ class Input extends StatelessWidget {
   Widget getInput(String type, String hintText){
     switch (type){
       case 'longText':
-        return InputText(hintText: hintText, controller: controller,);
+        return InputTextArea(hintText: hintText, controller: controller,);
       case 'select':
         return InputText(hintText: hintText, controller: controller,);
       default:

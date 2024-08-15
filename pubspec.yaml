@@ -52,6 +52,7 @@ dependencies:
   horizontal_week_calendar: ^0.0.15
   image_picker: ^1.1.2
   firebase_storage: ^12.1.0
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
