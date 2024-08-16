@@ -26,27 +26,6 @@ This Flutter application manages traffic violation tickets online. It features n
 - Firebase Project: [Setup Firebase](https://firebase.google.com/)
 - Midtrans Account: [Register](https://midtrans.com/)
 
-"If you only want to run the frontend, then you just need to follow the frontend setup steps and don't need to configure Midtrans and Firebase."
-
-### Frontend Setup
-
-1. Clone the frontend repository:
-   ```bash
-   git clone -b frontend git@github.com:Arroziqi/tilang_online.git frontend
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd frontend
-   ```
-3. Install the dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Run the app:
-   ```bash
-   flutter run
-   ```
-
 ### Setup Firebase
 
 1. Create a new Firebase project in the Firebase Console.
@@ -62,6 +41,25 @@ This Flutter application manages traffic violation tickets online. It features n
 1. Register and log in to your Midtrans account.
 2. Set up your project and obtain the client key and server key.
 3. Enable the payment methods you wish to use in your app.
+
+### Frontend Setup
+
+1. Clone the frontend repository:
+   ```bash
+   git clone -b frontend git@github.com:Arroziqi/tilang_online.git tilang_online
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd tilang_online
+   ```
+3. Install the dependencies:
+   ```bash
+   flutter pub get
+   ```  
+4. Run the app:
+   ```bash
+   flutter run
+   ```
 
 ### Backend Setup
 
