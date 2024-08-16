@@ -11,8 +11,9 @@ class TextBlackM20 extends StatelessWidget {
     return Text(
       text,
       style: blackTextStyle.copyWith(
-      //   todo: tambahkan fontsize = 20
-      //   todo: fontweight = medium (import dari theme.dart)
+        fontSize: 20,
+        height: 1.2,
+        fontWeight: medium,
       ),
     );
   }

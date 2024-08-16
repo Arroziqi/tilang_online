@@ -12,10 +12,11 @@ class ButtonReadmore extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: kPrimaryColor,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
       child: Text(
         'Read More',
-        style: whiteTextStyle,
+        style: whiteTextStyle.copyWith(fontSize: 12, fontWeight: regular),
       ),
     );
   }

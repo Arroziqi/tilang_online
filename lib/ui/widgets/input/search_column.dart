@@ -1,50 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/shared/theme.dart';
 
-class SearchColumn extends StatefulWidget {
-  const SearchColumn({super.key, required this.text});
+class SearchColumn extends StatelessWidget {
+  const SearchColumn({super.key, required this.text, required this.onSearch});
 
   final String text;
+  final ValueChanged<String> onSearch;
 
-  @override
-  State<SearchColumn> createState() => _SearchColumnState();
-}
-
-class _SearchColumnState extends State<SearchColumn> {
   @override
   Widget build(BuildContext context) {
-    return SearchAnchor(
-      builder: (BuildContext context, SearchController controller) => SearchBar(
-        // todo: atur padding dan style lainnya biar sesuai dengan yang ada di desain figma,
-        hintText: widget.text,
-        trailing: const <Widget>[
-          Icon(Icons.search),
-        ],
-        textStyle: WidgetStatePropertyAll(
-          blackTextStyle.copyWith(
-            fontSize: 16,
-            fontWeight: light,
-          ),
+    return TextField(
+      onChanged: onSearch,
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.white,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
         ),
+        suffixIcon: const Icon(Icons.search),
+        hintText: text,
       ),
-      suggestionsBuilder: (BuildContext context, SearchController controller) {
-        return List<ListTile>.generate(
-          5,
-          (int index) {
-            final String item = 'item $index';
-            return ListTile(
-              title: Text(item),
-              onTap: () {
-                setState(
-                  () {
-                    controller.closeView(item);
-                  },
-                );
-              },
-            );
-          },
-        );
-      },
     );
   }
 }

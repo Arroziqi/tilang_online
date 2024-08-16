@@ -41,6 +41,6 @@ class CustomListTileSideBorder extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }

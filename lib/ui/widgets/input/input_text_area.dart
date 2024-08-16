@@ -20,6 +20,6 @@ class InputTextArea extends StatelessWidget {
       ),
       controller: controller,
       style: blackTextStyle.copyWith(fontSize: 18, fontWeight: light,),
-    );;
+    );
   }
 }

@@ -1,7 +1,7 @@
 class TutorialClass{
   final String title;
-  final String imgUrl;
-  final String bodyText;
+  final String image;
+  final String body;
 
-  TutorialClass({required this.title, required this.imgUrl, required this.bodyText});
+  TutorialClass({required this.title, this.image = 'assets/img/tutorial/tutorial1.png', required this.body});
 }
