@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
+import 'package:flutter_app/ui/pages/onboarding/onboarding_page.dart';
 import 'package:gap/gap.dart';
 
-class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+class SplashPage extends StatelessWidget {
+  const SplashPage({super.key, required this.onPressed});
 
-  @override
-  State<SplashPage> createState() => _SplashPageState();
-}
+  final VoidCallback onPressed;
 
-class _SplashPageState extends State<SplashPage> {
   // untuk membuat background
   Widget backgroundProvider() {
     return Container(
@@ -51,9 +49,7 @@ class _SplashPageState extends State<SplashPage> {
           ),
           const Gap(39),
           TextButton(
-            onPressed: () {
-              Navigator.pushNamed(context, '/onboarding');
-            },
+            onPressed: onPressed,
             style: TextButton.styleFrom(
               backgroundColor: Colors.white,
               shape: RoundedRectangleBorder(

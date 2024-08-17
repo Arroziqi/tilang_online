@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:flutter_app/ui/pages/onboarding/components/button_get_started.dart';
 import 'package:flutter_app/ui/pages/onboarding/components/custom_bottom_navigation.dart';
+import 'package:flutter_app/ui/pages/splash_page.dart';
 import 'package:gap/gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -23,6 +24,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   // state apakah last page
   bool isLastPage = false;
+  bool isFirstTime = true;
+
+  void notFirstTime(){
+    setState(() {
+      isFirstTime = false;
+    });
+  }
 
   // widget untuk membuat konten dari onboarding pages
   Widget buildContent() {
@@ -157,7 +165,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return isFirstTime ? SplashPage(onPressed: notFirstTime) : Scaffold(
       backgroundColor: kBackgroundColor,
       appBar: buildAppBar(),
       body: SafeArea(

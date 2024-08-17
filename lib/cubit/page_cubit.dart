@@ -6,4 +6,8 @@ class PageCubit extends Cubit<int> {
   void setPage<int>(index) {
     emit(index);
   }
+
+  void resetPage<int>(){
+    emit(0);
+  }
 }

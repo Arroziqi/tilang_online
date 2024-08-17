@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/services/google_auth.dart';
 import 'package:flutter_app/shared/theme.dart';
 import 'package:gap/gap.dart';
 
@@ -7,14 +8,14 @@ PreferredSizeWidget customProfileAppBar({required context}) {
     backgroundColor: kBackgroundColor,
     leading: Padding(
       padding: const EdgeInsets.only(
-        top: 27,
-        bottom: 27,
-        left: 27,
+        top: 12,
+        bottom: 12,
+        left: 12,
       ),
       child: Row(
         children: [
           const CircleAvatar(
-            radius: 47,
+            radius: 30,
             backgroundImage: AssetImage('assets/img/icons/user.png'),
           ),
           Gap(defaultMargin),
@@ -27,11 +28,12 @@ PreferredSizeWidget customProfileAppBar({required context}) {
                 Text(
                   'Gajah Mada',
                   style: blackTextStyle.copyWith(
-                    fontSize: 24,
+                    fontSize: 18,
                     fontWeight: semiBold,
                   ),
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const Gap(7),
+                const Gap(2),
                 Text(
                   'gajahmada123@gmail.com',
                   style: blackTextStyle.copyWith(
@@ -46,12 +48,13 @@ PreferredSizeWidget customProfileAppBar({required context}) {
         ],
       ),
     ),
-    toolbarHeight: 168,
+    toolbarHeight: 100,
     leadingWidth: 325,
     actions: [
       Container(
         margin: const EdgeInsets.only(right: 27,),
         child: GestureDetector(
+          onTap: (){GoogleAuth().signOutFromGoogle();},
           child: CircleAvatar(
             backgroundColor: Colors.white,
             radius: 22,

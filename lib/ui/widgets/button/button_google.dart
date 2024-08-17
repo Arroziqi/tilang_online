@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/cubit/page_cubit.dart';
+import 'package:flutter_app/services/google_auth.dart';
 import 'package:flutter_app/shared/theme.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
 class ButtonGoogle extends StatelessWidget {
@@ -11,8 +14,9 @@ class ButtonGoogle extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: defaultMargin),
       child: TextButton(
         onPressed: () {
-          //           GoogleProvider(clientId: "52856553378-ai4upaho4g4524mjh06hf32k1usot4gf.apps.googleusercontent.com");
-          Navigator.pushNamed(context, '/home');
+          GoogleAuth().signInWithGoogle();
+          // untuk reset homepage ke beranda
+          context.read<PageCubit>().resetPage();
         },
         style: TextButton.styleFrom(
           backgroundColor: Colors.white,

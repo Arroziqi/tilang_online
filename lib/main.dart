@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/pages/edukasi/aturan/aturan_page.dart';
@@ -17,7 +18,6 @@ import 'package:flutter_app/cubit/page_cubit.dart';
 
 import 'package:flutter_app/shared/theme_data.dart';
 import 'package:flutter_app/ui/pages/onboarding/onboarding_page.dart';
-import 'package:flutter_app/ui/pages/splash_page.dart';
 
 import 'ui/pages/main_page.dart';
 
@@ -38,31 +38,44 @@ class MyApp extends StatelessWidget {
           create: (context) => PageCubit(),
         ),
       ],
-      child: MaterialApp(
-        // menghapus banner "DEBUG"
-        debugShowCheckedModeBanner: false,
+      child: StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (BuildContext context, AsyncSnapshot snapshot){
+          if(snapshot.hasError){
+            return Text(snapshot.error.toString());
+          }
 
-        // mengatur tema aplikasi
-        theme: AppTheme.getAppTheme(),
+          if(snapshot.connectionState == ConnectionState.active){
+            return MaterialApp(
+              // menghapus banner "DEBUG"
+              debugShowCheckedModeBanner: false,
 
-        // set nama aplikasi
-        title: 'MOTION',
+              // mengatur tema aplikasi
+              theme: AppTheme.getAppTheme(),
 
-        // routes
-        routes: {
-          '/': (context) => const SplashPage(),
-          '/onboarding': (context) => const OnboardingPage(),
-          '/home': (context) => const MainPage(),
-          '/notifikasi': (context) => const NotifikasiPage(),
-          '/pelanggaran': (context) => const PelanggaranPage(),
-          '/masukan': (context) => const MasukanPage(),
-          '/masukan/success': (context) => const MasukanSuccess(),
-          '/kendaraan': (context) => const KendaraanLists(),
-          '/kendaraan/form': (context) => const KendaraanForm(),
-          '/medsos': (context) => const MediaSosialPage(),
-          '/profile/data-pengemudi': (context) => const DataPengemudi(),
-          '/edukasi/tutorial': (context) => const TutorialPage(),
-          '/edukasi/aturan': (context) => const AturanPage(),
+              // set nama aplikasi
+              title: 'MOTION',
+
+              home: snapshot.data != null ? const MainPage() : const OnboardingPage(),
+
+              // routes
+              routes: snapshot.data != null ? {
+                '/home': (context) => const MainPage(),
+                '/notifikasi': (context) => const NotifikasiPage(),
+                '/pelanggaran': (context) => const PelanggaranPage(),
+                '/masukan': (context) => const MasukanPage(),
+                '/masukan/success': (context) => const MasukanSuccess(),
+                '/kendaraan': (context) => const KendaraanLists(),
+                '/kendaraan/form': (context) => const KendaraanForm(),
+                '/medsos': (context) => const MediaSosialPage(),
+                '/profile/data-pengemudi': (context) => const DataPengemudi(),
+                '/edukasi/tutorial': (context) => const TutorialPage(),
+                '/edukasi/aturan': (context) => const AturanPage(),
+              }: {},
+            );
+          }
+
+          return const Center(child: CircularProgressIndicator(),);
         },
       ),
     );
